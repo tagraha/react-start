@@ -16,7 +16,7 @@ import removeNil from '../../../shared/utils/arrays/removeNil';
 import getClientBundleEntryAssets from './getClientBundleEntryAssets';
 
 import ClientConfig from '../../../config/components/ClientConfig';
-import HTML from '../../../shared/components/HTML';
+import HTML from '../../../shared/container/HTML';
 
 // PRIVATES
 

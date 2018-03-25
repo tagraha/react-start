@@ -9,7 +9,7 @@ import { AsyncComponentProvider } from 'react-async-component';
 import './polyfills';
 
 import ReactHotLoader from './components/ReactHotLoader';
-import DemoApp from '../shared/components/DemoApp';
+import DemoApp from '../shared/container/DemoApp';
 
 // Get the DOM Element that will host our React application.
 const container = document.querySelector('#app');
@@ -58,7 +58,7 @@ if (process.env.BUILD_FLAG_IS_DEV === 'true' && module.hot) {
   // Accept changes to this file for hot reloading.
   module.hot.accept('./index.js');
   // Any changes to our App will cause a hotload re-render.
-  module.hot.accept('../shared/components/DemoApp', () => {
-    renderApp(require('../shared/components/DemoApp').default);
+  module.hot.accept('../shared/container/DemoApp', () => {
+    renderApp(require('../shared/container/DemoApp').default);
   });
 }
