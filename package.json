@@ -1,0 +1,140 @@
+{
+  "name": "react-start",
+  "version": "1.0.0",
+  "description": "heavily modified of react universally",
+  "main": "build/server/index.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "analyze:client": "babel-node internal/scripts/analyze --client",
+    "analyze:server": "babel-node internal/scripts/analyze --server",
+    "build": "babel-node internal/scripts/build --optimize",
+    "build:dev": "babel-node internal/scripts/build",
+    "clean": "cross-env babel-node internal/scripts/clean",
+    "deploy": "babel-node internal/scripts/deploy",
+    "develop": "cross-env DEPLOYMENT=development babel-node internal/development",
+    "lint": "eslint client server shared config internal",
+    "precommit": "lint-staged",
+    "preinstall": "node internal/scripts/preinstall",
+    "prepush": "jest",
+    "start": "cross-env NODE_ENV=production node build/server",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier-eslint --write",
+      "git add"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "shared/**/*.{js,jsx}"
+    ],
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/enzyme-to-json/serializer"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/(build|internal|node_modules|flow-typed|public)/"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tagraha/react-start"
+  },
+  "keywords": [
+    "react",
+    "boilerplate",
+    "starter kit",
+    "universal",
+    "javascript",
+    "express",
+    "webpack"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tagraha/react-start/issues"
+  },
+  "homepage": "https://github.com/tagraha/react-start#readme",
+  "dependencies": {
+    "app-root-dir": "1.0.2",
+    "colors": "1.1.2",
+    "compression": "1.7.0",
+    "cross-env": "5.0.5",
+    "dotenv": "4.0.0",
+    "express": "4.15.4",
+    "helmet": "3.8.1",
+    "hpp": "0.2.2",
+    "modernizr": "3.5.0",
+    "normalize.css": "7.0.0",
+    "offline-plugin": "4.8.3",
+    "pretty-error": "2.1.1",
+    "prop-types": "15.5.10",
+    "react": "16.2.0",
+    "react-async-bootstrapper": "1.1.1",
+    "react-async-component": "1.0.1",
+    "react-dom": "16.2.0",
+    "react-helmet": "5.2.0",
+    "react-redux": "5.0.7",
+    "react-router-dom": "4.2.2",
+    "redux": "3.7.2",
+    "serialize-javascript": "1.4.0",
+    "uuid": "3.1.0"
+  },
+  "devDependencies": {
+    "assets-webpack-plugin": "3.5.1",
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-eslint": "7.2.3",
+    "babel-jest": "21.0.2",
+    "babel-loader": "7.1.2",
+    "babel-plugin-transform-react-constant-elements": "6.23.0",
+    "babel-plugin-transform-react-inline-elements": "6.22.0",
+    "babel-plugin-transform-react-jsx-self": "6.22.0",
+    "babel-plugin-transform-react-jsx-source": "6.22.0",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-env": "1.6.0",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-3": "6.24.1",
+    "babel-template": "6.26.0",
+    "chokidar": "1.7.0",
+    "css-loader": "0.28.7",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1",
+    "enzyme-to-json": "3.3.3",
+    "eslint": "4.7.2",
+    "eslint-config-airbnb": "15.1.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-react": "7.3.0",
+    "extract-text-webpack-plugin": "3.0.0",
+    "file-loader": "0.11.2",
+    "glob": "7.1.2",
+    "happypack": "3.0.3",
+    "html-webpack-plugin": "2.30.1",
+    "husky": "0.14.3",
+    "jest": "22.4.3",
+    "lint-staged": "4.2.2",
+    "md5": "2.2.1",
+    "modernizr-loader": "1.0.1",
+    "node-notifier": "5.1.2",
+    "prettier": "1.7.0",
+    "prettier-eslint": "8.1.1",
+    "prettier-eslint-cli": "4.3.2",
+    "react-addons-test-utils": "15.6.0",
+    "react-hot-loader": "3.0.0-beta.6",
+    "react-test-renderer": "15.6.1",
+    "regenerator-runtime": "0.11.0",
+    "rimraf": "2.6.2",
+    "semver": "5.4.1",
+    "source-map-support": "0.4.18",
+    "style-loader": "0.18.2",
+    "webpack": "3.6.0",
+    "webpack-bundle-analyzer": "2.9.0",
+    "webpack-dev-middleware": "1.12.0",
+    "webpack-hot-middleware": "2.19.1",
+    "webpack-md5-hash": "0.0.5",
+    "webpack-node-externals": "1.6.0"
+  }
+}
