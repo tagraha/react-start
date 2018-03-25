@@ -176,7 +176,7 @@ const values = {
       // What is the public http path at which we must serve the bundle from?
       webPath: '/client/',
 
-      // Configuration settings for the development vendor DLL.  This will be created
+      // Configuration settings for the development vendor DLL. This will be created
       // by our development server and provides an improved dev experience
       // by decreasing the number of modules that webpack needs to process
       // for every rebuild of our client bundle.  It by default uses the
