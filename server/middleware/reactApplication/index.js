@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { renderToString, renderToStaticMarkup } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
 import { AsyncComponentProvider, createAsyncContext } from 'react-async-component';
-import asyncBootstrapper from 'react-async-bootstrapper';
+import bootstrap from 'react-async-bootstrapper';
 
 import configureStore from './../../../shared/redux/configureStore';
 import config from '../../../config';
@@ -64,7 +64,7 @@ export default function reactApplicationMiddleware(request, response) {
 
   // Pass our app into the react-async-component helper so that any async
   // components are resolved for the render.
-  asyncBootstrapper(app).then(() => {
+  bootstrap(app).then(() => {
     const appString = renderToString(app);
 
     // Generate the html response.
@@ -89,7 +89,7 @@ export default function reactApplicationMiddleware(request, response) {
       .status(
         reactRouterContext.missed
           ? // If the renderResult contains a "missed" match then we set a 404 code.
-          // Our App component will handle the rendering of an Error404 view.
+        // Our App component will handle the rendering of an Error404 view.
           404
           : // Otherwise everything is all good and we send a 200 OK status.
           200,
