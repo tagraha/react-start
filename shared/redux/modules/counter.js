@@ -4,8 +4,8 @@
 const INCREMENT = 'INCREMENT';
 
 const initialState = {
-  counterValue: 0
-}
+  counterValue: 0,
+};
 
 // Reducer
 export default function reducer(state = initialState, action = {}) {
@@ -14,8 +14,8 @@ export default function reducer(state = initialState, action = {}) {
     case INCREMENT: {
       return {
         ...state,
-        counterValue: parseInt(action.payload + 1)
-      }
+        counterValue: parseInt(action.payload + 1, 10),
+      };
     }
     default: { return state; }
   }
@@ -31,4 +31,4 @@ export function increment(value) {
 export const invokeIncrement = () => (dispatch, getState) => {
   const { counterValue } = getState().counter;
   return dispatch(increment(counterValue));
-}
+};
