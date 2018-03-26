@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import { Provider } from 'react-redux';
 import { renderToString, renderToStaticMarkup } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
+import { JobProvider, createJobContext } from 'react-jobs';
 import { AsyncComponentProvider, createAsyncContext } from 'react-async-component';
 import bootstrap from 'react-async-bootstrapper';
 
@@ -49,16 +50,23 @@ export default function reactApplicationMiddleware(request, response) {
   // query for the results of the render.
   const reactRouterContext = {};
 
+  // Create the job context for our provider, this grants
+  // us the ability to track the resolved jobs to send back to the client.
+  const jobContext = createJobContext();
+
+  // Create the redux store.
   const store = configureStore();
 
   // Declare our React application.
   const app = (
     <AsyncComponentProvider asyncContext={asyncComponentsContext}>
-      <Provider store={store}>
+      <JobProvider jobContext={jobContext}>
         <StaticRouter location={request.url} context={reactRouterContext}>
-          <DemoApp />
+          <Provider store={store}>
+            <DemoApp />
+          </Provider>
         </StaticRouter>
-      </Provider>
+      </JobProvider>
     </AsyncComponentProvider>
   );
 
@@ -73,6 +81,9 @@ export default function reactApplicationMiddleware(request, response) {
         reactAppString={appString}
         nonce={nonce}
         helmet={Helmet.rewind()}
+        storeState={store.getState()}
+        routerState={reactRouterContext}
+        jobsState={jobContext.getState()}
         asyncComponentsState={asyncComponentsContext.getState()}
       />,
     );
