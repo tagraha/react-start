@@ -32,9 +32,9 @@ function configureStore(initialState) {
     typeof window !== 'undefined' &&
     typeof window.devToolsExtension !== 'undefined'
       ? // Call the brower extension function to create the enhancer.
-        window.devToolsExtension()
+      window.devToolsExtension()
       : // Else we return a no-op function.
-        f => f,
+      f => f,
   );
 
   const store = initialState
