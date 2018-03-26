@@ -73,7 +73,7 @@
     "pretty-error": "2.1.1",
     "prop-types": "15.5.10",
     "react": "16.2.0",
-    "react-async-bootstrapper": "1.1.1",
+    "react-async-bootstrapper": "2.1.0",
     "react-async-component": "1.0.1",
     "react-dom": "16.2.0",
     "react-helmet": "5.2.0",
