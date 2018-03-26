@@ -518,10 +518,10 @@ export default function webpackConfigFactory(buildOptions) {
                 // paths used on the client.
                 publicPath: isDev
                   ? // When running in dev mode the client bundle runs on a
-                  // seperate port so we need to put an absolute path here.
-              `http://${config('host')}:${config('clientDevServerPort')}${config(
-                'bundles.client.webPath',
-              )}`
+                // seperate port so we need to put an absolute path here.
+                  `http://${config('host')}:${config('clientDevServerPort')}${config(
+                    'bundles.client.webPath',
+                  )}`
                   : // Otherwise we just use the configured web path for the client.
                   config('bundles.client.webPath'),
                 // We only emit files when building a web bundle, for the server
