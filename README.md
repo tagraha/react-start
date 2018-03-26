@@ -6,6 +6,7 @@ href="https://david-dm.org/tagraha/react-start">
 
 Heavily modification of react-universaly
 ----------------------------------------
+React boilerplate with asynchronous data fetching (universal/isomorphic rendering)
 
 TODOS
 -----
