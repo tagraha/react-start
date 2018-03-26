@@ -1,6 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
+import { invokeIncrement } from './../../../redux/modules/counter';
 class CounterRoute extends Component {
   constructor(props) {
     super(props);
@@ -26,11 +29,24 @@ class CounterRoute extends Component {
           Current value: {this.state.counter}
         </p>
         <p>
-          <button onClick={this.incrementCounter}>Increment</button>
+          Redux counter value: {this.props.counter}
+        </p>
+        <p>
+          <button onClick={this.incrementCounter} style={{ marginRight: 6 }}>Increment</button>
+          <button onClick={this.props.incrementAction}>Redux Increment</button>
         </p>
       </div>
     );
   }
 }
 
-export default CounterRoute;
+const mapStateToProps = state => ({
+  counter: state.counter.counterValue,
+});
+
+const mapActionsToProps = {
+  incrementAction: invokeIncrement,
+};
+
+// export default CounterRoute;
+export default connect(mapStateToProps, mapActionsToProps)(CounterRoute);

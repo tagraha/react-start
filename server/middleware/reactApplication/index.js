@@ -1,10 +1,12 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { Provider } from 'react-redux';
 import { renderToString, renderToStaticMarkup } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
 import { AsyncComponentProvider, createAsyncContext } from 'react-async-component';
 import asyncBootstrapper from 'react-async-bootstrapper';
 
+import configureStore from './../../../shared/redux/configureStore';
 import config from '../../../config';
 
 import ServerHTML from './ServerHTML';
@@ -47,12 +49,16 @@ export default function reactApplicationMiddleware(request, response) {
   // query for the results of the render.
   const reactRouterContext = {};
 
+  const store = configureStore();
+
   // Declare our React application.
   const app = (
     <AsyncComponentProvider asyncContext={asyncComponentsContext}>
-      <StaticRouter location={request.url} context={reactRouterContext}>
-        <DemoApp />
-      </StaticRouter>
+      <Provider store={store}>
+        <StaticRouter location={request.url} context={reactRouterContext}>
+          <DemoApp />
+        </StaticRouter>
+      </Provider>
     </AsyncComponentProvider>
   );
 

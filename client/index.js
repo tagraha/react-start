@@ -2,9 +2,11 @@
 
 import React from 'react';
 import { hydrate } from 'react-dom';
+import { Provider } from 'react-redux';
 import BrowserRouter from 'react-router-dom/BrowserRouter';
 import asyncBootstrapper from 'react-async-bootstrapper';
 import { AsyncComponentProvider } from 'react-async-component';
+import configureStore from './../shared/redux/configureStore';
 
 import './polyfills';
 
@@ -23,6 +25,15 @@ const supportsHistory = 'pushState' in window.history;
 // eslint-disable-next-line no-underscore-dangle
 const asyncComponentsRehydrateState = window.__ASYNC_COMPONENTS_REHYDRATE_STATE__;
 
+// Grab the state from a global variable injected into the server-generated HTML
+const preloadedState = window.__initialData__;
+
+// Allow the passed state to be garbage-collected
+delete window.__initialData__;
+delete window.__ASYNC_COMPONENTS_REHYDRATE_STATE__;
+
+const store = configureStore(preloadedState);
+
 /**
  * Renders the given React Application component.
  */
@@ -32,9 +43,11 @@ function renderApp(TheApp) {
   const app = (
     <ReactHotLoader>
       <AsyncComponentProvider rehydrateState={asyncComponentsRehydrateState}>
-        <BrowserRouter forceRefresh={!supportsHistory}>
-          <TheApp />
-        </BrowserRouter>
+        <Provider store={store}>
+          <BrowserRouter forceRefresh={!supportsHistory}>
+            <TheApp />
+          </BrowserRouter>
+        </Provider>
       </AsyncComponentProvider>
     </ReactHotLoader>
   );
