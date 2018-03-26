@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import { invokeIncrement } from './../../../redux/modules/counter';
+
 class CounterRoute extends Component {
   constructor(props) {
     super(props);
