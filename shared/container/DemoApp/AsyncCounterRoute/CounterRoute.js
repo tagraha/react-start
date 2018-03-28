@@ -64,15 +64,13 @@ export default compose(
   connect(mapStateToProps, mapActionsToProps),
   withJob({
     work: ({ match, post, asyncDemo }) =>
-      // if (post) {
-      //   // We already have a post, just return true.
-      //   return true;
-      // }
-
       // Execute the redux-thunk powered action that returns a Promise and
       // fetches the post.
       asyncDemo(),
+
     // Any time the post id changes we need to trigger the work.
-    shouldWorkAgain: (prevProps, nextProps) => true,
+    shouldWorkAgain: (prevProps, nextProps) => {
+      prevProps.post.id !== nextProps.post.id;
+    },
   }),
 )(CounterRoute);
