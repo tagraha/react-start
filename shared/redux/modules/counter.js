@@ -4,18 +4,10 @@
 const INCREMENT = 'INCREMENT';
 const ASYNC_DEMO = 'ASYNC_DEMO';
 
-const initialState = {
-  counterValue: 0,
-  asyncPostExample: {
-    body: '',
-    id: 0,
-    title: '',
-    userId: 0,
-  },
-};
+import { postInitial } from './../initialStates';
 
 // Reducer
-export default function reducer(state = initialState, action = {}) {
+export default function reducer(state = postInitial, action = {}) {
   switch (action.type) {
     // do reducer stuff
     case INCREMENT: {
@@ -52,11 +44,12 @@ export const invokeIncrement = () => (dispatch, getState) => {
   return dispatch(increment(counterValue));
 };
 
-export const loadPost = () => (dispatch, getState, { axios }) => axios
-  .get('https://jsonplaceholder.typicode.com/posts/1')
-  .then((res) => {
-    dispatch(fetchData(res.data));
-  })
-  .catch((err) => {
-    console.log('err');
-  });
+export const loadPost = () => (dispatch, getState, { axios }) =>
+  axios
+    .get('https://jsonplaceholder.typicode.com/posts/1')
+    .then(res => {
+      dispatch(fetchData(res.data));
+    })
+    .catch(err => {
+      console.log('err');
+    });

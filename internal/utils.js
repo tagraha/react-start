@@ -1,16 +1,21 @@
+import os from 'os';
 import HappyPack from 'happypack';
 import notifier from 'node-notifier';
-import colors from 'colors/safe';
 import { execSync } from 'child_process';
 import appRootDir from 'app-root-dir';
+import * as LoggingUtils from '../shared/utils/logging';
 
 // Generates a HappyPack plugin.
 // @see https://github.com/amireh/happypack/
 export function happyPackPlugin({ name, loaders }) {
+  // eslint-disable-next-line
+  const compilerThreadPool = HappyPack.ThreadPool({
+    size: os.cpus().length,
+  });
   return new HappyPack({
     id: name,
     verbose: false,
-    threads: 4,
+    threadPool: compilerThreadPool,
     loaders,
   });
 }
@@ -25,23 +30,11 @@ export function log(options) {
     });
   }
 
-  const level = options.level || 'info';
-  const msg = `${title}: ${options.message}`;
-
-  switch (level) {
-    case 'warn':
-      console.log(colors.yellow(msg));
-      break;
-    case 'error':
-      console.log(colors.bgRed.white(msg));
-      break;
-    case 'special':
-      console.log(colors.italic.cyan(msg));
-      break;
-    case 'info':
-    default:
-      console.log(colors.green.dim(msg));
-  }
+  LoggingUtils.log(
+    Object.assign({}, options, {
+      message: `${title}: ${options.message}`,
+    }),
+  );
 }
 
 export function exec(command) {

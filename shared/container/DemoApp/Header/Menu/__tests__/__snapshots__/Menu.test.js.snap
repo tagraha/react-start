@@ -29,6 +29,14 @@ exports[`<Home /> renders 1`] = `
   <li>
     <Link
       replace={false}
+      to="/async"
+    >
+      Async example
+    </Link>
+  </li>
+  <li>
+    <Link
+      replace={false}
       to="/about"
     >
       About

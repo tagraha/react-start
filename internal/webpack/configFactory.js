@@ -1,10 +1,10 @@
 import appRootDir from 'app-root-dir';
 import AssetsPlugin from 'assets-webpack-plugin';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import UglifyJsPlugin from 'uglifyjs-webpack-plugin';
 import nodeExternals from 'webpack-node-externals';
 import path from 'path';
 import webpack from 'webpack';
-import WebpackMd5Hash from 'webpack-md5-hash';
 
 import { happyPackPlugin, log } from '../utils';
 import { ifElse } from '../../shared/utils/logic';
@@ -19,7 +19,7 @@ import config from '../../config';
  * This function has been configured to support one "client/web" bundle, and any
  * number of additional "node" bundles (e.g. our "server").  You can define
  * additional node bundles by editing the project confuguration.
- *
+ com
  * @param  {Object} buildOptions - The build options.
  * @param  {target} buildOptions.target - The bundle target (e.g 'clinet' || 'server').
  * @param  {target} buildOptions.optimize - Build an optimised version of the bundle?
@@ -47,23 +47,25 @@ export default function webpackConfigFactory(buildOptions) {
   log({
     level: 'info',
     title: 'Webpack',
-    message: `Creating ${isProd
-      ? 'an optimised'
-      : 'a development'} bundle configuration for the "${target}"`,
+    message: `Creating ${
+      isProd ? 'an optimised' : 'a development'
+    } bundle configuration for the "${target}"`,
   });
 
   const bundleConfig =
     isServer || isClient
       ? // This is either our "server" or "client" bundle.
-      config(['bundles', target])
+        config(['bundles', target])
       : // Otherwise it must be an additional node bundle.
-      config(['additionalNodeBundles', target]);
+        config(['additionalNodeBundles', target]);
 
   if (!bundleConfig) {
     throw new Error('No bundle configuration exists for target:', target);
   }
 
   let webpackConfig = {
+    // Webpack Mode
+    mode: ifDev('development', 'production'),
     // Define our entry chunks for our bundle.
     entry: {
       // We name our entry files "index" as it makes it easier for us to
@@ -80,10 +82,11 @@ export default function webpackConfigFactory(buildOptions) {
         // Required to support hot reloading of our client.
         ifDevClient(
           () =>
-            `webpack-hot-middleware/client?reload=true&path=http://${config('host')}:${config(
-              'clientDevServerPort',
-            )}/__webpack_hmr`,
+            `webpack-hot-middleware/client?reload=true&path=http://${config(
+              'host',
+            )}:${config('clientDevServerPort')}/__webpack_hmr`,
         ),
+
         // The source entry file for the bundle.
         path.resolve(appRootDir.get(), bundleConfig.srcEntryFile),
       ]),
@@ -126,9 +129,9 @@ export default function webpackConfigFactory(buildOptions) {
 
     target: isClient
       ? // Only our client bundle will target the web as a runtime.
-      'web'
+        'web'
       : // Any other bundle must be targetting node as a runtime.
-      'node',
+        'node',
 
     // Ensure that webpack polyfills the following node features for use
     // within any bundles that are targetting node as a runtime. This will be
@@ -169,6 +172,41 @@ export default function webpackConfigFactory(buildOptions) {
       false,
     ),
 
+    // Webpack 4 automatically runs UglifyPlugin and other optimization processes.
+    // It can be configured here:
+    optimization: {
+      minimizer: ifProdClient([
+        new UglifyJsPlugin({
+          uglifyOptions: {
+            ecma: 8,
+            compress: {
+              warnings: false,
+              // Disabled because of an issue with Uglify breaking seemingly valid code:
+              // https://github.com/facebook/create-react-app/issues/2376
+              // Pending further investigation:
+              // https://github.com/mishoo/UglifyJS2/issues/2011
+              comparisons: false,
+            },
+            mangle: {
+              safari10: true,
+            },
+            output: {
+              comments: false,
+              // Turned on because emoji and regex is not minified properly using default
+              // https://github.com/facebook/create-react-app/issues/2488
+              ascii_only: true,
+            },
+          },
+          // Use multi-process parallel running to improve the build speed
+          // Default number of concurrent runs: os.cpus().length - 1
+          parallel: true,
+          // Enable file caching
+          cache: true,
+          sourceMap: config('includeSourceMapsForOptimisedClientBundle'),
+        }),
+      ]),
+    },
+
     resolve: {
       // These extensions are tried when resolving a file.
       extensions: config('bundleSrcTypes').map(ext => `.${ext}`),
@@ -176,7 +214,7 @@ export default function webpackConfigFactory(buildOptions) {
       // This is required for the modernizr-loader
       // @see https://github.com/peerigon/modernizr-loader
       alias: {
-        modernizr$: path.resolve(appRootDir.get(), './.modernizrrc'),
+        modernizr$: path.resolve(appRootDir.get(), './.modernizrrc.json'),
       },
     },
 
@@ -221,18 +259,6 @@ export default function webpackConfigFactory(buildOptions) {
           }),
       ),
 
-      // Implement webpack 3 scope hoisting that will remove function wrappers
-      // around your modules you may see some small size improvements. However,
-      // the significant improvement will be how fast the JavaScript loads in the browser.
-      ifProdClient(new webpack.optimize.ModuleConcatenationPlugin()),
-
-      // We use this so that our generated [chunkhash]'s are only different if
-      // the content for our respective chunks have changed.  This optimises
-      // our long term browser caching strategy for our client bundle, avoiding
-      // cases where browsers end up having to download all the client chunks
-      // even though 1 or 2 may have only changed.
-      ifClient(() => new WebpackMd5Hash()),
-
       // These are process.env flags that you can use in your code in order to
       // have advanced control over what is included/excluded in your bundles.
       // For example you may only want certain parts of your code to be
@@ -260,7 +286,8 @@ export default function webpackConfigFactory(buildOptions) {
       // doing debugging.
       //
       // NOTE: We are stringifying the values to keep them in line with the
-      // expected type of a typical process.env member (i.e. string).\
+      // expected type of a typical process.env member (i.e. string).
+      // @see https://github.com/ctrlplusb/react-universally/issues/395
       new webpack.EnvironmentPlugin({
         // It is really important to use NODE_ENV=production in order to use
         // optimised versions of some node_modules, such as React.
@@ -293,34 +320,10 @@ export default function webpackConfigFactory(buildOptions) {
       ifDev(() => new webpack.NoEmitOnErrorsPlugin()),
 
       // We need this plugin to enable hot reloading of our client.
-      ifDevClient(() => new webpack.HotModuleReplacementPlugin()),
-
-      // For our production client we need to make sure we pass the required
-      // configuration to ensure that the output is minimized/optimized.
-      ifProdClient(
+      ifDevClient(
         () =>
-          new webpack.LoaderOptionsPlugin({
-            minimize: true,
-          }),
-      ),
-
-      // For our production client we need to make sure we pass the required
-      // configuration to ensure that the output is minimized/optimized.
-      ifProdClient(
-        () =>
-          new webpack.optimize.UglifyJsPlugin({
-            sourceMap: config('includeSourceMapsForOptimisedClientBundle'),
-            compress: {
-              screw_ie8: true,
-              warnings: false,
-            },
-            mangle: {
-              screw_ie8: true,
-            },
-            output: {
-              comments: false,
-              screw_ie8: true,
-            },
+          new webpack.HotModuleReplacementPlugin({
+            multiStep: true,
           }),
       ),
 
@@ -406,6 +409,8 @@ export default function webpackConfigFactory(buildOptions) {
                   // React that the subtree hasn’t changed so React can completely
                   // skip it when reconciling.
                   ifProd('transform-react-constant-elements'),
+                  // Add syntax dynamic import for direct webpack `import()` support
+                  'syntax-dynamic-import',
                 ].filter(x => x != null),
               },
               buildOptions,
@@ -450,7 +455,9 @@ export default function webpackConfigFactory(buildOptions) {
               // details on what loader is being implemented.
               loader: 'happypack/loader?id=happypack-javascript',
               include: removeNil([
-                ...bundleConfig.srcPaths.map(srcPath => path.resolve(appRootDir.get(), srcPath)),
+                ...bundleConfig.srcPaths.map(srcPath =>
+                  path.resolve(appRootDir.get(), srcPath),
+                ),
                 ifProdClient(path.resolve(appRootDir.get(), 'src/html')),
               ]),
             },
@@ -499,10 +506,6 @@ export default function webpackConfigFactory(buildOptions) {
               test: /\.modernizrrc.js$/,
               loader: 'modernizr-loader',
             }),
-            ifClient({
-              test: /\.modernizrrc(\.json)?$/,
-              loader: 'modernizr-loader!json-loader',
-            }),
 
             // ASSETS (Images/Fonts/etc)
             // This is bound to our server/client bundles as we only expect to be
@@ -518,12 +521,12 @@ export default function webpackConfigFactory(buildOptions) {
                 // paths used on the client.
                 publicPath: isDev
                   ? // When running in dev mode the client bundle runs on a
-                // seperate port so we need to put an absolute path here.
-                  `http://${config('host')}:${config('clientDevServerPort')}${config(
-                    'bundles.client.webPath',
-                  )}`
+                    // seperate port so we need to put an absolute path here.
+                    `http://${config('host')}:${config(
+                      'clientDevServerPort',
+                    )}${config('bundles.client.webPath')}`
                   : // Otherwise we just use the configured web path for the client.
-                  config('bundles.client.webPath'),
+                    config('bundles.client.webPath'),
                 // We only emit files when building a web bundle, for the server
                 // bundle we only care about the file loader being able to create
                 // the correct asset URLs.

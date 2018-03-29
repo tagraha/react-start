@@ -1,11 +1,9 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
 import React from 'react';
-import { shallow, configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import AboutRoute from '../AboutRoute';
+import { shallow } from 'enzyme';
 
-configure({ adapter: new Adapter() });
+import AboutRoute from '../AboutRoute';
 
 describe('<AboutRoute />', () => {
   test('renders', () => {

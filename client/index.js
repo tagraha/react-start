@@ -4,14 +4,14 @@ import React from 'react';
 import { hydrate } from 'react-dom';
 import { Provider } from 'react-redux';
 import BrowserRouter from 'react-router-dom/BrowserRouter';
-import bootstrap from 'react-async-bootstrapper';
+import asyncBootstrapper from 'react-async-bootstrapper';
+import { AppContainer as ReactHotLoader } from 'react-hot-loader';
 import { AsyncComponentProvider } from 'react-async-component';
 import { JobProvider } from 'react-jobs';
 import configureStore from './../shared/redux/configureStore';
 
 import './polyfills';
 
-import ReactHotLoader from './components/ReactHotLoader';
 import DemoApp from '../shared/container/DemoApp';
 
 // Get the DOM Element that will host our React application.
@@ -29,19 +29,19 @@ const store = configureStore(
 const supportsHistory = 'pushState' in window.history;
 
 // Get any rehydrateState for the async components.
-// eslint-disable-next-line no-underscore-dangle
-const asyncComponentsRehydrateState = window.__ASYNC_COMPONENTS_REHYDRATE_STATE__;
+const asyncComponentsRehydrateState =
+  window.__ASYNC_COMPONENTS_REHYDRATE_STATE__;
 
 // Grab the state from a global variable injected into the server-generated HTML
 const preloadedState = window.__initialData__;
 
-// Allow the passed state to be garbage-collected
-delete window.__initialData__;
-delete window.__ASYNC_COMPONENTS_REHYDRATE_STATE__;
-
 // Get any "rehydrate" state sent back by the server
 // eslint-disable-next-line no-underscore-dangle
 const rehydrateState = window.__JOBS_STATE__;
+
+// Allow the passed state to be garbage-collected
+delete window.__initialData__;
+delete window.__ASYNC_COMPONENTS_REHYDRATE_STATE__;
 
 /**
  * Renders the given React Application component.
@@ -66,7 +66,7 @@ function renderApp(TheApp) {
   // We use the react-async-component in order to support code splitting of
   // our bundle output. It's important to use this helper.
   // @see https://github.com/ctrlplusb/react-async-component
-  bootstrap(app).then(() => hydrate(app, container));
+  asyncBootstrapper(app).then(() => hydrate(app, container));
 }
 
 // Execute the first render of our app.
