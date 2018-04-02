@@ -86,9 +86,6 @@ const listener = app.listen(config('port'), () =>
       'port',
     )}
       Press Ctrl-C to stop.
-
-
-
     `,
   }),
 );
