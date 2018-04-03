@@ -26,9 +26,9 @@ class PostRoute extends Component {
             (fetch from: https://jsonplaceholder.typicode.com/posts/1)
           </small>
         </h4>
-        <p>{this.props.post.body}</p>
+        <p>{this.props.post.asyncPostExample.body}</p>
 
-        <p>Redux counter value: {this.props.counter}</p>
+        <p>Redux counter value: {this.props.counter.counterValue}</p>
         <button onClick={this.increment}>Increment</button>
       </div>
     );
@@ -36,8 +36,8 @@ class PostRoute extends Component {
 }
 
 const mapStateToProps = state => ({
-  counter: state.counter.counterValue,
-  post: state.counter.asyncPostExample,
+  counter: state.counter,
+  post: state.counter,
 });
 
 const mapActionsToProps = {
