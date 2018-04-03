@@ -3,7 +3,8 @@ import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { withJob } from 'react-jobs';
 import Helmet from 'react-helmet';
-import { invokeIncrement, loadPost } from './../../../redux/modules/counter';
+import { invokeIncrement } from './../../../redux/modules/counter';
+import { loadPost } from './../../../redux/modules/post';
 
 class PostRoute extends Component {
   constructor(props) {
@@ -37,7 +38,7 @@ class PostRoute extends Component {
 
 const mapStateToProps = state => ({
   counter: state.counter,
-  post: state.counter,
+  post: state.post,
 });
 
 const mapActionsToProps = {

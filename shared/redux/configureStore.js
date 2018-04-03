@@ -4,9 +4,11 @@ import thunk from 'redux-thunk';
 import axios from 'axios';
 
 import counter from './modules/counter';
+import post from './modules/post';
 
 const reducer = combineReducers({
   counter,
+  post,
 });
 
 const logger = createLogger({
@@ -32,9 +34,9 @@ function configureStore(initialState) {
     typeof window !== 'undefined' &&
     typeof window.devToolsExtension !== 'undefined'
       ? // Call the brower extension function to create the enhancer.
-      window.devToolsExtension()
+        window.devToolsExtension()
       : // Else we return a no-op function.
-      f => f,
+        f => f,
   );
 
   const store = initialState
