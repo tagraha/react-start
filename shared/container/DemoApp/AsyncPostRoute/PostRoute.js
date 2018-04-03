@@ -21,6 +21,7 @@ class PostRoute extends Component {
           <title>Async Post Example</title>
         </Helmet>
 
+        <h3>Redux</h3>
         <h4>
           async example{' '}
           <small>
