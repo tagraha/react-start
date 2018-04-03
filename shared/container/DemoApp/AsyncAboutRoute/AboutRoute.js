@@ -13,12 +13,22 @@ function AboutRoute() {
         <span role="img" aria-label="heart">
           ❤️
         </span>
+        <br />
+        <p>Tirta Nugraha (dev.nugrata@gmail.com)</p>
       </p>
 
       <p>
         View our contributors list on our{' '}
-        <a href="https://github.com/ctrlplusb/react-universally">GitHub</a>{' '}
+        <a target="_blank" href="https://github.com/tagraha/react-start">
+          GitHub
+        </a>{' '}
         page.
+      </p>
+      <p>
+        honorable mention{' '}
+        <a target="_blank" href="https://github.com/ctrlplusb">
+          ctrlplusb
+        </a>
       </p>
     </div>
   );
