@@ -2,6 +2,8 @@
 
 ## 2.0.0 (2018-04-03)
 
+## 2.0.0 (2018-04-03)
+
 ##### Build System / Dependencies
 
 * **hash:**  contenthash error on webpack@4.4.1 ([ac56c6a2](https://github.com/tagraha/react-start/commit/ac56c6a2aaeeed31f0dcc6cad6842a994a1977a6))
