@@ -25,17 +25,32 @@ exports[`<AboutRoute /> renders 1`] = `
     >
       ❤️
     </span>
+    <br />
+    <p>
+      Tirta Nugraha (dev.nugrata@gmail.com)
+    </p>
   </p>
   <p>
     View our contributors list on our
      
     <a
-      href="https://github.com/ctrlplusb/react-universally"
+      href="https://github.com/tagraha/react-start"
+      target="_blank"
     >
       GitHub
     </a>
      
     page.
+  </p>
+  <p>
+    honorable mention
+     
+    <a
+      href="https://github.com/ctrlplusb"
+      target="_blank"
+    >
+      ctrlplusb
+    </a>
   </p>
 </div>
 `;
