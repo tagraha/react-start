@@ -3,10 +3,10 @@
 // Actions
 const ASYNC_DEMO = 'ASYNC_DEMO';
 
-import { postInitial } from './../initialStates';
+import { postMock } from './../initialStates';
 
 // Reducer
-export default function reducer(state = postInitial, action = {}) {
+export default function reducer(state = postMock, action = {}) {
   switch (action.type) {
     // do reducer stuff
     case ASYNC_DEMO: {

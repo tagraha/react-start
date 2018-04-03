@@ -2,10 +2,10 @@
 
 // Actions
 const INCREMENT = 'INCREMENT';
-import { postInitial } from './../initialStates';
+import { counterMock } from './../initialStates';
 
 // Reducer
-export default function reducer(state = postInitial, action = {}) {
+export default function reducer(state = counterMock, action = {}) {
   switch (action.type) {
     // do reducer stuff
     case INCREMENT: {
