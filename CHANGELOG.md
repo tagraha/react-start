@@ -1,3 +1,34 @@
+## 2.0.0 (2018-04-03)
+
+##### Build System / Dependencies
+
+* **hash:**  contenthash error on webpack@4.4.1 ([ac56c6a2](https://github.com/tagraha/react-start/commit/ac56c6a2aaeeed31f0dcc6cad6842a994a1977a6))
+
+##### New Features
+
+* **v2:**  support async data fetching & other perks ([c2472e06](https://github.com/tagraha/react-start/commit/c2472e06e8b2a0299d5e80711a621106fdfc0dda))
+
+##### Bug Fixes
+
+* **loop:**  fix looping dispatch ([984840e9](https://github.com/tagraha/react-start/commit/984840e9dc6122ea60aae5332c43e07e551b0500))
+
+##### Other Changes
+
+* **package:**
+  *  update webpack to 4.4.1 ([935191a7](https://github.com/tagraha/react-start/commit/935191a75c79789f06e1971416ce754b47dce3cd))
+  *  upgrade to react 16.3.0 ([1c2b5020](https://github.com/tagraha/react-start/commit/1c2b50201db6176e03ee021b5d0e913377f7d08c))
+  *  update react-async-component ([45f3fb5b](https://github.com/tagraha/react-start/commit/45f3fb5bc250197a35b7ec3e4a070e317d9c04e4))
+
+##### Refactors
+
+* **mockStore:**  refactoring mock store ([7e101d6f](https://github.com/tagraha/react-start/commit/7e101d6fcc6af8aaaf3f801fcfbf209f998cb526))
+* **store:**  separate async post store for example ([0bc1669f](https://github.com/tagraha/react-start/commit/0bc1669ffef009933eff90ade711b6cf94b26a86))
+
+##### Tests
+
+* **snapshot:**  update snapshot ([ba04f8da](https://github.com/tagraha/react-start/commit/ba04f8da3d358f617b0d584f44dd165ff9d377a4))
+* **fix:**  fix broken test ([4dbc7a47](https://github.com/tagraha/react-start/commit/4dbc7a470bae0dfc15c10c7bbd43cc03d2cb022d))
+
 ### 1.2.0 (2018-03-26)
 
 ##### New Features
