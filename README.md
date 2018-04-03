@@ -11,7 +11,8 @@ React boilerplate with asynchronous data fetching (universal/isomorphic renderin
 TODOS
 -----
 - [x] attach redux
-- [ ] make it async data fetch
-- [ ] upgrade to webpack 4 (perks)
+- [x] make it async data fetch
+- [x] upgrade to webpack 4 (perks)
+- [x] unit testing
 - [ ] redux-saga over redux-thunk?
 
