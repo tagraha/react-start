@@ -4,6 +4,11 @@ target="_blank"
 href="https://david-dm.org/tagraha/react-start">
   <img src="https://david-dm.org/tagraha/react-start.svg" alt="Dependency Status" />
 </a>
+<a 
+target="_blank"
+href="https://david-dm.org/ctrlplusb/react-universally?type=dev">
+  <img src="https://david-dm.org/tagraha/react-start/dev-status.svg" alt="Dev Dependency Status" />
+</a>
 
 Heavily modification of react-universaly
 ----------------------------------------
