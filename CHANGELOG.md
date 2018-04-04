@@ -1,3 +1,18 @@
+### 2.1.0 (2018-04-04)
+
+##### Bug Fixes
+
+* **warning:**  validateDomNesting ([90e95b4a](https://github.com/tagraha/react-start/commit/90e95b4aab4a732d2a333f2f4553538353d6576f))
+
+##### Other Changes
+
+* **package:**
+  *  webpack 4.5.0 ([47bc6803](https://github.com/tagraha/react-start/commit/47bc6803575fa3525a1e90e01776c69c2075a8be))
+  *  update dev dependencies ([f7c2cf6a](https://github.com/tagraha/react-start/commit/f7c2cf6ab2950f81cd2e86d77d5cc4ffb19f242f))
+  *  update package ([0bcdf7c5](https://github.com/tagraha/react-start/commit/0bcdf7c545d4ea084b06c38bfef493f09673620b))
+* **snapshot:**  updating snapshot ([ccbfeee7](https://github.com/tagraha/react-start/commit/ccbfeee772a17ef5ce75e7f6e939beb6ef0d81d1))
+* **style:**  use border instead of background ([e55f5eff](https://github.com/tagraha/react-start/commit/e55f5effb59d365bc430ca8b504fbbe9025b5921))
+
 ## 2.0.0 (2018-04-03)
 
 ##### Build System / Dependencies
