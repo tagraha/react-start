@@ -4,7 +4,7 @@ exports[`<Home /> renders 1`] = `
 <ul
   style={
     Object {
-      "backgroundColor": "#c6c6c6",
+      "border": "1px solid #c6c6c6",
       "marginTop": "1rem",
       "padding": "1rem",
     }

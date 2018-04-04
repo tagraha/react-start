@@ -26,9 +26,9 @@ exports[`<AboutRoute /> renders 1`] = `
       ❤️
     </span>
     <br />
-    <p>
+    <span>
       Tirta Nugraha (dev.nugrata@gmail.com)
-    </p>
+    </span>
   </p>
   <p>
     View our contributors list on our
