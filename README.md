@@ -1,4 +1,4 @@
-[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 <a 
 target="_blank"
 href="https://david-dm.org/tagraha/react-start">
@@ -47,6 +47,8 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
+| [<img src="https://avatars0.githubusercontent.com/u/3034375?v=4" width="100px;"/><br /><sub><b>Tirta Nugraha</b></sub>](http://www.betotally.com/)<br />[💻](https://github.com/tagraha/react-start/commits?author=tagraha "Code") [📖](https://github.com/tagraha/react-start/commits?author=tagraha "Documentation") [🔌](#plugin-tagraha "Plugin/utility libraries") [👀](#review-tagraha "Reviewed Pull Requests") [⚠️](https://github.com/tagraha/react-start/commits?author=tagraha "Tests") |
+| :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
