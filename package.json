@@ -23,7 +23,9 @@
     "test:coverage": "jest --coverage",
     "release:major": "changelog -M -u https://github.com/tagraha/react-start && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major && git push origin --tags",
     "release:minor": "changelog -m -u https://github.com/tagraha/react-start && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor && git push origin --tags",
-    "release:patch": "changelog -p -u https://github.com/tagraha/react-start && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin --tags"
+    "release:patch": "changelog -p -u https://github.com/tagraha/react-start && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin --tags",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "lint-staged": {
     "*.js": [
