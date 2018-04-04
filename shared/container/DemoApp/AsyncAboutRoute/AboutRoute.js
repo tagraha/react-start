@@ -14,7 +14,7 @@ function AboutRoute() {
           ❤️
         </span>
         <br />
-        <p>Tirta Nugraha (dev.nugrata@gmail.com)</p>
+        <span>Tirta Nugraha (dev.nugrata@gmail.com)</span>
       </p>
 
       <p>
