@@ -6,7 +6,7 @@ href="https://david-dm.org/tagraha/react-start">
 </a>
 <a 
 target="_blank"
-href="https://david-dm.org/ctrlplusb/react-universally?type=dev">
+href="https://david-dm.org/tagraha/react-start?type=dev">
   <img src="https://david-dm.org/tagraha/react-start/dev-status.svg" alt="Dev Dependency Status" />
 </a>
 
