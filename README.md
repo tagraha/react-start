@@ -12,7 +12,7 @@ Installation
 ------------
 ```bash
 git clone git@github.com:tagraha/react-start.git
-cd react start
+cd react-start
 npm install
 ```
 
