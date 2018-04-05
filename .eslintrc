@@ -23,6 +23,7 @@
     // if a windows user correctly converts CRLF to LF upon commits otherwise
     // there are errors every line.
     "linebreak-style": 0,
-    "no-underscore-dangle": "off"
+    "no-underscore-dangle": "off",
+    "function-paren-newline": "off"
   }
 }
