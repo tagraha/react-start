@@ -24,7 +24,7 @@ cd react-start
 npm install
 ```
 
-at this point make `.env` file. you can copy it from `.env_example` file
+at this point make `.env` file. you can copy it from `.env_example` file on your root directory
 
 ```bash
 npm run develop
