@@ -1,4 +1,5 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![Build Status](https://travis-ci.org/tagraha/react-start.svg?branch=master)](https://travis-ci.org/tagraha/react-start)
 [![CircleCI](https://circleci.com/gh/tagraha/react-start.svg?style=svg)](https://circleci.com/gh/tagraha/react-start)
 
 <a 
