@@ -6,6 +6,9 @@ import Helmet from 'react-helmet';
 import { invokeIncrement } from './../../../redux/modules/counter';
 import { loadPost } from './../../../redux/modules/post';
 
+// internal Components
+import Counter from './../../../components/Demo/Counter';
+
 class PostRoute extends Component {
   constructor(props) {
     super(props);
@@ -30,7 +33,10 @@ class PostRoute extends Component {
         </h4>
         <p>{this.props.post.asyncPostExample.body}</p>
 
-        <p>Redux counter value: {this.props.counter.counterValue}</p>
+        <p>
+          Redux counter value:{' '}
+          <Counter count={this.props.counter.counterValue} />
+        </p>
         <button onClick={this.increment}>Increment</button>
       </div>
     );
