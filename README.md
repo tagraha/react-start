@@ -40,6 +40,43 @@ npm run build
 npm start
 ```
 
+Configuration
+-------------
+you can configure like disabling SSR mode, renaming service worker file etc with `value.js` file. here's the the quick look of the file
+
+```javascript
+
+const values = {
+  clientConfigFilter: {
+    // This is here as an example showing that you can expose variables
+    // that were potentially provivded by the environment
+    welcomeMessage: true,
+    // We only need to expose the enabled flag of the service worker.
+    serviceWorker: {
+      enabled: true,
+    },
+    // We need to expose all the polyfill.io settings.
+    polyfillIO: true,
+    // We need to expose all the htmlPage settings.
+    htmlPage: true,
+  },
+
+  // The host on which the server should run.
+  host: EnvVars.string('HOST', 'localhost'),
+
+  // The port on which the server should run.
+  port: EnvVars.number('PORT', 1337),
+
+  // The port on which the client bundle development server should run.
+  clientDevServerPort: EnvVars.number('CLIENT_DEV_PORT', 7331),
+  welcomeMessage: EnvVars.string('WELCOME_MSG', 'Hello world!'),
+
+  // Disable server side rendering?
+  disableSSR: false,
+  browserCacheMaxAge: '365d',
+}
+```
+
 TODOS
 -----
 - [x] attach redux
