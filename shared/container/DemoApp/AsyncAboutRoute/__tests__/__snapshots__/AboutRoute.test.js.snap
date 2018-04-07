@@ -35,6 +35,7 @@ exports[`<AboutRoute /> renders 1`] = `
      
     <a
       href="https://github.com/tagraha/react-start"
+      rel="noopener noreferrer"
       target="_blank"
     >
       GitHub
@@ -47,6 +48,7 @@ exports[`<AboutRoute /> renders 1`] = `
      
     <a
       href="https://github.com/ctrlplusb"
+      rel="noopener noreferrer"
       target="_blank"
     >
       ctrlplusb
