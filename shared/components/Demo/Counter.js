@@ -6,8 +6,7 @@ export default class Counter extends Component {
     super(props);
     this.state = {};
   }
-  static getDerivedStateFromProps(nextProps, prevState) {
-    console.log('derived triggered');
+  static getDerivedStateFromProps(nextProps) {
     return null;
   }
   render() {
