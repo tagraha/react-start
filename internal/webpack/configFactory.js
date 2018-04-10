@@ -94,6 +94,7 @@ export default function webpackConfigFactory(buildOptions) {
 
     // Bundle output configuration.
     output: {
+      hotUpdateChunkFilename: '[hash].hot-update.js',
       // The dir in which our bundle should be output.
       path: path.resolve(appRootDir.get(), bundleConfig.outputPath),
       // The filename format for our bundle's entries.
