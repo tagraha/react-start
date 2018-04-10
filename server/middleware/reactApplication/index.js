@@ -13,6 +13,7 @@ import {
 } from 'react-async-component';
 import { JobProvider, createJobContext } from 'react-jobs';
 import asyncBootstrapper from 'react-async-bootstrapper';
+import { ServerStyleSheet, StyleSheetManager } from 'styled-components';
 
 import config from '../../../config';
 
@@ -63,13 +64,18 @@ export default function reactApplicationMiddleware(request, response) {
   // Create the redux store.
   const store = configureStore();
 
+  // styled-components => https://www.styled-components.com/docs/advanced#server-side-rendering
+  const sheet = new ServerStyleSheet();
+
   // Declare our React application.
   const app = (
     <AsyncComponentProvider asyncContext={asyncComponentsContext}>
       <JobProvider jobContext={jobContext}>
         <StaticRouter location={request.url} context={reactRouterContext}>
           <Provider store={store}>
-            <DemoApp />
+            <StyleSheetManager sheet={sheet.instance}>
+              <DemoApp />
+            </StyleSheetManager>
           </Provider>
         </StaticRouter>
       </JobProvider>
