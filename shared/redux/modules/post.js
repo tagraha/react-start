@@ -2,6 +2,7 @@
 
 // Actions
 const ASYNC_DEMO = 'ASYNC_DEMO';
+const ASYNC_DEMO_FAILED = 'ASYNC_DEMO_FAILED';
 
 import { postMock } from './../initialStates';
 
@@ -15,6 +16,17 @@ export default function reducer(state = postMock, action = {}) {
         asyncPostExample: action.payload,
       };
     }
+    case ASYNC_DEMO_FAILED: {
+      return {
+        ...state,
+        asyncPostExample: {
+          body: 'fetch post failed, maybe your internet connection',
+          title: 'whoops, failed fetch data',
+          id: 0,
+          userId: 0,
+        },
+      };
+    }
     default: {
       return state;
     }
@@ -24,6 +36,10 @@ export default function reducer(state = postMock, action = {}) {
 // Action Creators
 export function fetchData(post) {
   return { type: ASYNC_DEMO, payload: post };
+}
+
+export function fetchDataFailed() {
+  return { type: ASYNC_DEMO_FAILED };
 }
 
 // side effects, only as applicable
@@ -36,4 +52,5 @@ export const loadPost = () => (dispatch, getState, { axios }) =>
     })
     .catch(err => {
       console.log('err');
+      dispatch(fetchDataFailed());
     });
