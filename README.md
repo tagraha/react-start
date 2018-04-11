@@ -26,7 +26,7 @@ cd react-start
 npm install
 ```
 
-at this point make `.env` file. you can copy it from `.env_example` file on your root directory
+at this point make `.env` file on your root directory. you can copy it from `.env_example` file.
 
 ```bash
 npm run develop
@@ -40,6 +40,12 @@ Production script command
 npm run build
 npm start
 ```
+
+-------------
+
+The App
+-------
+Navigate to `shared/container/DemoApp` and start exploring the code
 
 Configuration
 -------------
@@ -84,6 +90,7 @@ TODOS
 - [x] make it async data fetch
 - [x] upgrade to webpack 4 (perks)
 - [x] unit testing
+- [ ] flowjs type checker
 - [ ] redux-saga over redux-thunk?
 
 
