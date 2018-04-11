@@ -93,6 +93,11 @@ TODOS
 - [ ] flowjs type checker
 - [ ] redux-saga over redux-thunk?
 
+Flow Coverage
+-------------
+we're currently working on flow coverage. you can switch to branch `feature/flow` to take a look at the code
+![flow-coverage](https://raw.githubusercontent.com/tagraha/react-start/master/flow-coverage.png)
+
 
 ## Contributors
 
