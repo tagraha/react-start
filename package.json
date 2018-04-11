@@ -26,6 +26,7 @@
     "release:patch": "changelog -p -u https://github.com/tagraha/react-start && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin --tags",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate",
+    "flow-report": "flow-coverage-report -i 'shared/container/**/*.js' -i 'shared/container/**/*.jsx' -x 'shared/container/**/__tests__/**' -x 'shared/container/DemoApp/index.js' -x 'shared/container/HTML/index.js' -t html -t json -t text --threshold 70",
     "flow": "flow"
   },
   "lint-staged": {
@@ -133,6 +134,7 @@
     "extract-text-webpack-plugin": "4.0.0-beta.0",
     "file-loader": "1.1.11",
     "flow-bin": "0.69.0",
+    "flow-coverage-report": "0.5.0",
     "glob": "7.1.2",
     "happypack": "5.0.0-beta.1",
     "html-webpack-plugin": "3.2.0",
