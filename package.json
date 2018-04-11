@@ -25,7 +25,8 @@
     "release:minor": "changelog -m -u https://github.com/tagraha/react-start && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor && git push origin --tags",
     "release:patch": "changelog -p -u https://github.com/tagraha/react-start && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin --tags",
     "contributors:add": "all-contributors add",
-    "contributors:generate": "all-contributors generate"
+    "contributors:generate": "all-contributors generate",
+    "flow": "flow"
   },
   "lint-staged": {
     "*.js": [
