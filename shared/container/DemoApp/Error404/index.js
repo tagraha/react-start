@@ -1,7 +1,12 @@
+/* @flow */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-class Error404 extends Component {
+type Props = {
+  staticContext: any,
+};
+
+class Error404 extends Component<Props, {}> {
   componentWillMount() {
     const { staticContext } = this.props;
     if (staticContext) {

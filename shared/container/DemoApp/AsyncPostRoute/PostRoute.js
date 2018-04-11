@@ -1,3 +1,4 @@
+/* @flow */
 import React, { Component } from 'react';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
@@ -9,7 +10,15 @@ import { loadPost } from './../../../redux/modules/post';
 // internal Components
 import Counter from './../../../components/Demo/Counter';
 
-class PostRoute extends Component {
+type Props = {
+  counter: Object,
+  post: Object,
+  incrementAction: Function,
+};
+
+class PostRoute extends Component<Props> {
+  increment: () => void;
+
   constructor(props) {
     super(props);
     this.increment = this.increment.bind(this);

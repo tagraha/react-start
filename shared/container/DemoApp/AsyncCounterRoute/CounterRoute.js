@@ -1,7 +1,14 @@
+/* @flow */
 /* eslint-disable react/no-unescaped-entities */
 import React, { Component } from 'react';
 
-class CounterRoute extends Component {
+type State = {
+  counter: number,
+};
+
+class CounterRoute extends Component<{}, State> {
+  incrementCounter: () => void;
+
   constructor(props) {
     super(props);
     this.incrementCounter = this.incrementCounter.bind(this);
