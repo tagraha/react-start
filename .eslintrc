@@ -24,6 +24,7 @@
     // there are errors every line.
     "linebreak-style": 0,
     "no-underscore-dangle": "off",
-    "function-paren-newline": "off"
+    "function-paren-newline": "off",
+    "indent": "off"
   }
 }
