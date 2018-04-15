@@ -16,5 +16,5 @@ export default class Counter extends Component {
 
 Counter.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
-  count: PropTypes.number,
+  count: PropTypes.number.isRequired,
 };

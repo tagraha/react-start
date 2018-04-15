@@ -11,7 +11,6 @@ import Counter from './../../../components/Demo/Counter';
 
 class PostRoute extends Component {
   constructor(props) {
-    super(props);
     this.increment = this.increment.bind(this);
   }
   increment() {
