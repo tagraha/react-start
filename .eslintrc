@@ -25,6 +25,7 @@
     "linebreak-style": 0,
     "no-underscore-dangle": "off",
     "function-paren-newline": "off",
-    "indent": "off"
+    "indent": "off",
+    "react/prefer-stateless-function": "off"
   }
 }
