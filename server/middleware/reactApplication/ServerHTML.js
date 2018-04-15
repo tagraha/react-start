@@ -154,17 +154,17 @@ function ServerHTML(props) {
 
 ServerHTML.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
-  asyncComponentsState: PropTypes.object,
+  asyncComponentsState: PropTypes.object.isRequired,
   // eslint-disable-next-line react/forbid-prop-types
-  helmet: PropTypes.object,
+  helmet: PropTypes.object.isRequired,
   // eslint-disable-next-line react/forbid-prop-types
-  jobsState: PropTypes.object,
-  nonce: PropTypes.string,
-  reactAppString: PropTypes.string,
+  jobsState: PropTypes.object.isRequired,
+  nonce: PropTypes.string.isRequired,
+  reactAppString: PropTypes.string.isRequired,
   // eslint-disable-next-line react/forbid-prop-types
-  routerState: PropTypes.object,
+  routerState: PropTypes.object.isRequired,
   // eslint-disable-next-line react/forbid-prop-types
-  storeState: PropTypes.object,
+  storeState: PropTypes.object.isRequired,
 };
 
 // EXPORT
