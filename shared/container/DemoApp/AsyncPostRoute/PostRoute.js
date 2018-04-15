@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { withJob } from 'react-jobs';
@@ -11,6 +12,7 @@ import Counter from './../../../components/Demo/Counter';
 
 class PostRoute extends Component {
   constructor(props) {
+    super(props); // eslint-disable-line
     this.increment = this.increment.bind(this);
   }
   increment() {
@@ -52,17 +54,26 @@ const mapActionsToProps = {
   asyncDemo: loadPost,
 };
 
+PostRoute.propTypes = {
+  counter: PropTypes.number.isRequired, // eslint-disable-line react/forbid-prop-types
+  post: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+  incrementAction: PropTypes.func.isRequired, // eslint-disable-line react/forbid-prop-types
+};
+
 // export default PostRoute;
 export default compose(
   connect(mapStateToProps, mapActionsToProps),
   withJob({
-    work: ({ match, post, asyncDemo }) =>
+    work: (
+      { match, post, asyncDemo }, // eslint-disable-line
+    ) =>
       // Execute the redux-thunk powered action that returns a Promise and
       // fetches the post.
       asyncDemo(),
 
     // Any time the post id changes we need to trigger the work.
     shouldWorkAgain: (prevProps, nextProps) => {
+      // eslint-disable-line
       prevProps.post.id !== nextProps.post.id;
     },
   }),
