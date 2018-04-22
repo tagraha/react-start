@@ -1,3 +1,45 @@
+### 2.2.0 (2018-04-22)
+
+##### New Features
+
+* **styled-components:**  applying styled-components ([85230ba9](https://github.com/tagraha/react-start/commit/85230ba9bfa6a2e082a77be401062423b6d1c507))
+
+##### Bug Fixes
+
+* **eslint:**
+  *  fix eslint warning ([e4e45f78](https://github.com/tagraha/react-start/commit/e4e45f783c45227ec0db7ff3277369461507e6c3))
+  *  fix eslint warning ([bd94bee3](https://github.com/tagraha/react-start/commit/bd94bee3784a8d07db59a546d2fd2b7fb8e9f7e2))
+  *  fix eslint warning ([772bce53](https://github.com/tagraha/react-start/commit/772bce530ac4e8b29bcde5a45d764f01af7efbfe))
+  *  fix eslint warning ([d3efd5de](https://github.com/tagraha/react-start/commit/d3efd5defa0f66f72ac4d1da16254ba86c6d57ec))
+  *  fix eslint warning ([1b648728](https://github.com/tagraha/react-start/commit/1b6487287dd810ec27e8b315fe155f8d091a2460))
+* **webpackHotUpdate:**  webpackHotUpdate is not defined / not found ([7fe02ee5](https://github.com/tagraha/react-start/commit/7fe02ee53084c7b189c7545735d61a251c964fff))
+* **security:**  fix security risk on href ([41e7e7e3](https://github.com/tagraha/react-start/commit/41e7e7e3b08a9c9f1ecd1b01e304641fad291aea))
+
+##### Other Changes
+
+* **package:**
+  *  update devDependencies ([247b494b](https://github.com/tagraha/react-start/commit/247b494b8106e64f6d98af12fea2e6f54bd48613))
+  *  update dependencies ([32d745b7](https://github.com/tagraha/react-start/commit/32d745b76427956bb66e44bdec4e862bd872885d))
+  *  adding styled-components ([c859494b](https://github.com/tagraha/react-start/commit/c859494bfe28e0d7a805d730b7cccaa77ac53cab))
+  *  update devDependencies ([9d838225](https://github.com/tagraha/react-start/commit/9d83822575bb2d44c1c9f5ecd967bf48e174dbe4))
+  *  upgrade lint-staged 7.0.4 ([110d22d7](https://github.com/tagraha/react-start/commit/110d22d73195155d539c016de2fc72bf57c55e7d))
+  *  update webpack-dev-middleware 3.1.1 ([0ff2a96a](https://github.com/tagraha/react-start/commit/0ff2a96af02c323db3cbb26a10f86c6d688b1fa9))
+* **eslint:**
+  *  update eslint rule ([cc7acb08](https://github.com/tagraha/react-start/commit/cc7acb0800612cc9ebbc5d781fb00dd7b0f34077))
+  *  update eslint rules ([698cc9e8](https://github.com/tagraha/react-start/commit/698cc9e8f9a6fdd31fd3296494fb0d1ba2329698))
+  *  update eslint rule. indent off ([1e1c6325](https://github.com/tagraha/react-start/commit/1e1c6325f98361d484bc30173ca68e6b394c4ab0))
+  *  eslint fix ([58a76dba](https://github.com/tagraha/react-start/commit/58a76dba7bfe194fc468b5196551bdd8034ee84f))
+  *  eslint fix ([e9bdce3f](https://github.com/tagraha/react-start/commit/e9bdce3f8b4b635756b543c36f18d2b417b8f1a2))
+* **loading:**  adding loading component ([a4824051](https://github.com/tagraha/react-start/commit/a48240510334b350c0f4123687be2bf48519f656))
+* **lint:**
+  *  fix lint warning ([e042faa0](https://github.com/tagraha/react-start/commit/e042faa043519e1448988c6f88ae075f9c3afe00))
+  *  turn off function-paren-newline ([21c6e836](https://github.com/tagraha/react-start/commit/21c6e83655181e62a5f77a54e9f32e2df3173df2))
+  *  remove auto fix lint ([9a871b91](https://github.com/tagraha/react-start/commit/9a871b913415ccb125880af58a97562baecb0586))
+
+##### Tests
+
+* **snapshot:**  update snapshot ([9c7fc2aa](https://github.com/tagraha/react-start/commit/9c7fc2aa51ae75a50909f1132c9687f9a62b0169))
+
 ### 2.1.0 (2018-04-04)
 
 ##### Bug Fixes
