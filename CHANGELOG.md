@@ -1,3 +1,20 @@
+#### 2.2.1 (2018-05-21)
+
+##### Other Changes
+
+* **package:**
+  *  update source-map-support ([ba16f8fa](https://github.com/tagraha/react-start/commit/ba16f8fa1af7a402709c5a8060ee188ed65d595a))
+  *  update webpack ([5f005065](https://github.com/tagraha/react-start/commit/5f005065d57fe6798da4505484958f6e4f5da454))
+  *  update webpack-hot-middleware ([ff04a3eb](https://github.com/tagraha/react-start/commit/ff04a3eb63976bc795bbabc006813d26f37d6f38))
+  *  update lint-staged ([5c099df3](https://github.com/tagraha/react-start/commit/5c099df333b2d64d5cd7e9cea11a05dc63d4a817))
+  *  update eslint-plugin-react ([ec6f966b](https://github.com/tagraha/react-start/commit/ec6f966b7007f69f19d9581353070b0e8974ebaa))
+  *  update package ([b60cf91f](https://github.com/tagraha/react-start/commit/b60cf91f9a093274c2f431083265da6cb42ff903))
+  *  update package ([7f37c7ee](https://github.com/tagraha/react-start/commit/7f37c7eed5bf7693b9a7c5da9f6ee47bb1fdbf71))
+  *  update package ([578f1fff](https://github.com/tagraha/react-start/commit/578f1fff2d0c0bf420acc9aecc4de1fbdbef855c))
+  *  update package ([1ec276e1](https://github.com/tagraha/react-start/commit/1ec276e18b43655b329ef7ab35d928c09581a895))
+  *  update offline-plugin ([947f37e4](https://github.com/tagraha/react-start/commit/947f37e4418f3c36de168d1610b2d2cacf9cb823))
+  *  update dependencies & devDependencies ([9d55454d](https://github.com/tagraha/react-start/commit/9d55454d53c9a977f54d02029ba9a83ea5d32fd0))
+
 ### 2.2.0 (2018-04-22)
 
 ##### New Features
