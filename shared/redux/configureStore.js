@@ -16,16 +16,21 @@ const logger = createLogger({
 });
 
 function configureStore(initialState) {
+  const middleware =
+    process.env.NODE_ENV === 'development'
+      ? applyMiddleware(
+          logger,
+          // Initialising redux-thunk with extra arguments will pass the below
+          // arguments to all the redux-thunk actions. Below we are passing a
+          // preconfigured axios instance which can be used to fetch data with.
+          // @see https://github.com/gaearon/redux-thunk
+          thunk.withExtraArgument({ axios }),
+        )
+      : applyMiddleware(thunk.withExtraArgument({ axios }));
+
   const enhancers = compose(
     // Middleware store enhancer.
-    applyMiddleware(
-      logger,
-      // Initialising redux-thunk with extra arguments will pass the below
-      // arguments to all the redux-thunk actions. Below we are passing a
-      // preconfigured axios instance which can be used to fetch data with.
-      // @see https://github.com/gaearon/redux-thunk
-      thunk.withExtraArgument({ axios }),
-    ),
+    middleware,
     // Redux Dev Tools store enhancer.
     // @see https://github.com/zalmoxisus/redux-devtools-extension
     // We only want this enhancer enabled for development and when in a browser
