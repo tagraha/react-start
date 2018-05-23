@@ -4,7 +4,7 @@ import React from 'react';
 import { hydrate } from 'react-dom';
 import { Provider } from 'react-redux';
 import BrowserRouter from 'react-router-dom/BrowserRouter';
-import asyncBootstrapper from 'react-async-bootstrapper';
+import bootstrap from 'react-async-bootstrapper';
 import { AppContainer as ReactHotLoader } from 'react-hot-loader';
 import { AsyncComponentProvider } from 'react-async-component';
 import { JobProvider } from 'react-jobs';
@@ -66,7 +66,7 @@ function renderApp(TheApp) {
   // We use the react-async-component in order to support code splitting of
   // our bundle output. It's important to use this helper.
   // @see https://github.com/ctrlplusb/react-async-component
-  asyncBootstrapper(app).then(() => hydrate(app, container));
+  bootstrap(app).then(() => hydrate(app, container));
 }
 
 // Execute the first render of our app.

@@ -12,7 +12,7 @@ import {
   createAsyncContext,
 } from 'react-async-component';
 import { JobProvider, createJobContext } from 'react-jobs';
-import asyncBootstrapper from 'react-async-bootstrapper';
+import bootstrap from 'react-async-bootstrapper';
 import { ServerStyleSheet, StyleSheetManager } from 'styled-components';
 
 import config from '../../../config';
@@ -31,7 +31,9 @@ export default function reactApplicationMiddleware(request, response) {
   if (typeof response.locals.nonce !== 'string') {
     throw new Error('A "nonce" value has not been attached to the response');
   }
-  const { locals: { nonce } } = response;
+  const {
+    locals: { nonce },
+  } = response;
 
   // It's possible to disable SSR, which can be useful in development mode.
   // In this case traditional client side only rendering will occur.
@@ -84,7 +86,7 @@ export default function reactApplicationMiddleware(request, response) {
 
   // Pass our app into the react-async-component helper so that any async
   // components are resolved for the render.
-  asyncBootstrapper(app).then(() => {
+  bootstrap(app).then(() => {
     const appString = renderToString(app);
 
     // Generate the html response.
