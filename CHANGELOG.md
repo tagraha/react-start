@@ -1,3 +1,30 @@
+#### 2.2.2 (2018-05-23)
+
+##### New Features
+
+* **logger:**  attach redux logger base on dev environment ([eb24af2a](https://github.com/tagraha/react-start/commit/eb24af2a5fdd35a49ec5fc6870039ec4b10afb34))
+
+##### Bug Fixes
+
+* **asyncBootstrapper:**  fix deprecation notice for bootstrap method ([6adaa2f6](https://github.com/tagraha/react-start/commit/6adaa2f672fca398e6d64751878f66b679648754))
+* **props warning:**  fixing propTypes warning ([11df300e](https://github.com/tagraha/react-start/commit/11df300eefe2bec04a1691c7dc0223d0d7fa9f8f))
+* **audit:**  fix npm vulnerability audit ([bd402953](https://github.com/tagraha/react-start/commit/bd402953ece9cd95d1ec25fbbc7f0c1d29b4759b))
+* **vulneral:**
+  *  fix npm vulnerability ([affcd5ac](https://github.com/tagraha/react-start/commit/affcd5acbc27d59eabc8a196e71e7d12cd1288b6))
+  *  fix npm vulnerability ([9d110bf3](https://github.com/tagraha/react-start/commit/9d110bf36496ae3ba2e325da23fb3943c7ca0088))
+* **velneral:**  fix npm vulnerability fill-range --depth 10 ([59259666](https://github.com/tagraha/react-start/commit/59259666296af2e894cd2c17fb446f114cb50650))
+
+##### Other Changes
+
+* **package:**
+  *  update jest ([0ee04a1a](https://github.com/tagraha/react-start/commit/0ee04a1a48b3d9d4b49fc2ed76a47decb75bc0bb))
+  *  update babel-jest ([fc8728e7](https://github.com/tagraha/react-start/commit/fc8728e71c6c751471cb3615352361ca12b07cd2))
+  *  update babel-preset-env ([ae03b9cc](https://github.com/tagraha/react-start/commit/ae03b9ccc6ffe7c78cc9ed35a8a593940c375bde))
+  *  update cross-env ([2729b552](https://github.com/tagraha/react-start/commit/2729b55256570269a6760301d02114c363416070))
+  *  update webpack-bundle-analyzer ([40a53d20](https://github.com/tagraha/react-start/commit/40a53d209728be9e15ada6fb7e97e885036fbe7a))
+  *  update request package ([358cc8a0](https://github.com/tagraha/react-start/commit/358cc8a050bdaa39507d6f2dd008b4b8a2a07547))
+  *  update lint-staged ([4ec08056](https://github.com/tagraha/react-start/commit/4ec08056e607435ad3be7e8990c3bc3222760499))
+
 #### 2.2.1 (2018-05-21)
 
 ##### Other Changes
