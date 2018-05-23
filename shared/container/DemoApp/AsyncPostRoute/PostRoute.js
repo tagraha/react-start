@@ -55,7 +55,7 @@ const mapActionsToProps = {
 };
 
 PostRoute.propTypes = {
-  counter: PropTypes.number.isRequired, // eslint-disable-line react/forbid-prop-types
+  counter: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
   post: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
   incrementAction: PropTypes.func.isRequired, // eslint-disable-line react/forbid-prop-types
 };
