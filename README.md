@@ -18,6 +18,10 @@ Heavily modification of react-universaly
 ----------------------------------------
 React boilerplate with code spliting, asynchronous data fetching (universal/isomorphic rendering)
 
+Heads up
+--------
+We are using react ^16.3.0. You might want to read this ([React v16.3.0: New lifecycles and context API](https://reactjs.org/blog/2018/03/29/react-v-16-3.html)) before starting playing around with this boilerplate.
+
 Installation
 ------------
 ```bash
