@@ -71,7 +71,7 @@
     "chalk": "2.4.1",
     "compression": "1.7.2",
     "cross-env": "5.1.6",
-    "dotenv": "5.0.1",
+    "dotenv": "6.0.0",
     "express": "4.16.3",
     "helmet": "3.12.1",
     "hpp": "0.2.2",
