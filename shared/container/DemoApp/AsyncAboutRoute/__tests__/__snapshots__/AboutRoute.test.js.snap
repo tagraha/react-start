@@ -26,6 +26,9 @@ exports[`<AboutRoute /> renders 1`] = `
       ❤️
     </span>
     <br />
+    <BapelUiKit>
+      sure sure..
+    </BapelUiKit>
     <span>
       Tirta Nugraha (dev.nugrata@gmail.com)
     </span>
