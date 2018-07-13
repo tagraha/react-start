@@ -68,6 +68,7 @@
   "dependencies": {
     "app-root-dir": "1.0.2",
     "axios": "0.18.0",
+    "bapel": "2.1.4",
     "chalk": "2.4.1",
     "compression": "1.7.2",
     "cross-env": "5.1.6",
@@ -97,7 +98,7 @@
     "serialize-javascript": "1.5.0",
     "styled-components": "3.3.2",
     "uglifyjs-webpack-plugin": "1.2.5",
-    "uuid": "3.2.1"
+    "uuid": "3.3.2"
   },
   "devDependencies": {
     "all-contributors-cli": "4.11.1",
