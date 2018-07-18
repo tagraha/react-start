@@ -1,6 +1,5 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { Button } from 'bapel';
 
 function AboutRoute() {
   return (
@@ -15,7 +14,6 @@ function AboutRoute() {
           ❤️
         </span>
         <br />
-        <Button>sure sure..</Button>
         <span>Tirta Nugraha (dev.nugrata@gmail.com)</span>
       </p>
 
