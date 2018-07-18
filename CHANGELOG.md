@@ -1,3 +1,38 @@
+#### 2.2.3 (2018-07-18)
+
+##### Bug Fixes
+
+* **component:**  about route bapel import ([6321a928](https://github.com/tagraha/react-start/commit/6321a928083333031c399ac4c9476bdb26d51db4))
+
+##### Other Changes
+
+* **package:**
+  *  update webpack ([1d2b582f](https://github.com/tagraha/react-start/commit/1d2b582f8078ef2816936a0ceb8a23b60669da0d))
+  *  update react-hot-loader ([8fd4f72f](https://github.com/tagraha/react-start/commit/8fd4f72f2f0dcf70240049c3df5eb30b55b26234))
+  *  upgrade prop-types ([61ebba95](https://github.com/tagraha/react-start/commit/61ebba95377a27f52e9a9bde497f30d08e3e2530))
+  *  update compression ([5e35d052](https://github.com/tagraha/react-start/commit/5e35d052e03db865650ab2ed95c26c137b623ca3))
+  *  update jest ([5e401189](https://github.com/tagraha/react-start/commit/5e4011895502f9e4111f789e4683251df442bf99))
+  *  update react-test-renderer ([cebf383c](https://github.com/tagraha/react-start/commit/cebf383c2eac16bb7602b5891801c08a24ff0750))
+  *  update react & react-dom ([688ba713](https://github.com/tagraha/react-start/commit/688ba71378fd4d5a153972004cb56096646d6161))
+  *  update webpack@4.12.0 ([86217622](https://github.com/tagraha/react-start/commit/8621762296b826f61bbcf56160b3d108a7ae96ef))
+  *  update assets-webpack-plugin ([6e298932](https://github.com/tagraha/react-start/commit/6e2989322984942cce65632a0a57b0d1acc4caae))
+  *  update styled-components ([b52f86ad](https://github.com/tagraha/react-start/commit/b52f86adfedc189ce13ec6a7c3cb368359261a47))
+  *  update react-router-dom ([29d11d97](https://github.com/tagraha/react-start/commit/29d11d9782f6dc6b055198467b8833ae360d9599))
+  *  update react-hot-loader ([0625854e](https://github.com/tagraha/react-start/commit/0625854eca4636ca3b95834a0714b421ad5c24a1))
+  *  update offline-plugin ([6e45327f](https://github.com/tagraha/react-start/commit/6e45327f1bf7b87df5efd67111803a9972e942d8))
+  *  update redux-thunk ([73084cc8](https://github.com/tagraha/react-start/commit/73084cc88bf5f40479af5f36170e7f1e4e680f91))
+  *  update dotenv ([49f5d057](https://github.com/tagraha/react-start/commit/49f5d057456a4718375166f1eff92bfe60ee5d3d))
+  *  update react v16.4.0 ([0b30189e](https://github.com/tagraha/react-start/commit/0b30189ead3b0d7ce8b6e74390f61449ae46d005))
+* **dependencies:**
+  *  upgrade cross-env ([9f6fdf6a](https://github.com/tagraha/react-start/commit/9f6fdf6aa7c9cd0e93980993e73a47b4e0c71681))
+  *  upgrade react-tree-walker ([670807f1](https://github.com/tagraha/react-start/commit/670807f145c110863d12076a98cc4bf1845dbef2))
+  *  upgrade uglifyjs-webpack-plugin ([b73f2ff6](https://github.com/tagraha/react-start/commit/b73f2ff61709f5ec09470bcec37faebdf74a8d92))
+  *  upgrade uuid ([3223b3e3](https://github.com/tagraha/react-start/commit/3223b3e3cb8c7384ebc4edb072f6dc94d33a6d86))
+
+##### Tests
+
+* **snapshot:**  update aboutRoute snapshot ([d9a17e37](https://github.com/tagraha/react-start/commit/d9a17e378dc943cfee9fde6e26444556870034c9))
+
 #### 2.2.2 (2018-05-23)
 
 ##### New Features
