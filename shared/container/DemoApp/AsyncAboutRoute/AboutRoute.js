@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Button from 'bapel';
+import { Button } from 'bapel';
+
 function AboutRoute() {
   return (
     <div style={{ textAlign: 'center' }}>
