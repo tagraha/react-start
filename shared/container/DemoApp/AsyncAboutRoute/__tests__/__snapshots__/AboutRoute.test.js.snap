@@ -26,15 +26,6 @@ exports[`<AboutRoute /> renders 1`] = `
       ❤️
     </span>
     <br />
-    <Button
-      block={false}
-      disabled={false}
-      round={false}
-      size="default"
-      variant="default"
-    >
-      sure sure..
-    </Button>
     <span>
       Tirta Nugraha (dev.nugrata@gmail.com)
     </span>
