@@ -70,7 +70,7 @@
     "axios": "0.18.0",
     "bapel": "2.1.4",
     "chalk": "2.4.1",
-    "compression": "1.7.2",
+    "compression": "1.7.3",
     "cross-env": "5.2.0",
     "dotenv": "6.0.0",
     "express": "4.16.3",
