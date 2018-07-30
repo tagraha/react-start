@@ -1,3 +1,23 @@
+#### 2.2.4 (2018-07-30)
+
+##### Other Changes
+
+* **package:**
+  *  update webpack ([80751e21](https://github.com/tagraha/react-start/commit/80751e21e732cc565e88c2370b8af18b52a3e3ba))
+  *  update regenerator-runtime ([9ca63c39](https://github.com/tagraha/react-start/commit/9ca63c392311403147235a775e0b6ab426a379f3))
+  *  update redux-mock-store ([505d8765](https://github.com/tagraha/react-start/commit/505d87659c365683b27e2664ec9733f8df5fb66c))
+  *  update lint-staged ([946b7370](https://github.com/tagraha/react-start/commit/946b73708cf8059be824faa6681b160fed32d136))
+  *  update jest ([979307d2](https://github.com/tagraha/react-start/commit/979307d2696636672f5ca8dc477b541baab2db51))
+  *  update eslint-plugin-react ([6ba43e6f](https://github.com/tagraha/react-start/commit/6ba43e6f623ea8bfbf3b54de2128af956eefdc91))
+  *  update eslint-config-airbnb ([927073b7](https://github.com/tagraha/react-start/commit/927073b75b17ae0f0372e4b9fb4b6fe94e1e4e31))
+  *  update eslint ([6f1f0029](https://github.com/tagraha/react-start/commit/6f1f00298c76d11d2a340969be3b0e7495c0a3b7))
+  *  update css-loader ([84eb1f5c](https://github.com/tagraha/react-start/commit/84eb1f5cc8f2603ec797caec6d1464b2bd857cda))
+  *  uninstall bapel package ([503c99f1](https://github.com/tagraha/react-start/commit/503c99f1fbbc9162e96c82c432dbc6309ec681c0))
+
+##### Tests
+
+* **snapshot:**  update aboutRoute Snapshot ([21ceed2b](https://github.com/tagraha/react-start/commit/21ceed2be69c1d7decae3f45f4e0909b1dbe46da))
+
 #### 2.2.3 (2018-07-18)
 
 ##### Bug Fixes
