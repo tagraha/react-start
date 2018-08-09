@@ -410,6 +410,9 @@ export default function webpackConfigFactory(buildOptions) {
                   // React that the subtree hasn’t changed so React can completely
                   // skip it when reconciling.
                   ifProd('transform-react-constant-elements'),
+                  // Remove React propTypes from the production build, as they are only used in development.
+                  // You can save bandwidth by removing them.
+                  ifProd('transform-react-remove-prop-types'),
                   // Add syntax dynamic import for direct webpack `import()` support
                   'syntax-dynamic-import',
                 ].filter(x => x != null),
