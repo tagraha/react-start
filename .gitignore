@@ -46,4 +46,4 @@ flow-coverage/
 .DS_Store
 
 # Since we decided on npm over yarn this makes sense.
-yarn.lock
+package-lock.json
