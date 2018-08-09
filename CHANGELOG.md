@@ -1,3 +1,20 @@
+#### 2.2.6 (2018-08-09)
+
+##### Build System / Dependencies
+
+* **prod:**  apply babel transform remove proptype ([0e080e23](https://github.com/tagraha/react-start/commit/0e080e23beb55e2f19be8fe979cca1ea61e83d7b))
+* **circleci:**
+  *  update circleci configuration ([f57baffd](https://github.com/tagraha/react-start/commit/f57baffdf19ae4baf6dff558931d020e16c59cb3))
+  *  update node version ([08f4133e](https://github.com/tagraha/react-start/commit/08f4133e94ff85b3c1b03af7aab623d7753ce78d))
+
+##### Other Changes
+
+* **package:**  adding babel transform remove proptypes ([24393bbc](https://github.com/tagraha/react-start/commit/24393bbcf65a0ae905f7b0a2478049f8f31c1974))
+
+##### Tests
+
+* **eslint:**  update eslint rules & update few lint warning ([7cb6beb7](https://github.com/tagraha/react-start/commit/7cb6beb711adb573126060215c58196be87b40eb))
+
 #### 2.2.5 (2018-08-09)
 
 ##### Other Changes
