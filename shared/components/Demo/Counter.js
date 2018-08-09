@@ -6,11 +6,14 @@ export default class Counter extends Component {
     super(props);
     this.state = {};
   }
+
   static getDerivedStateFromProps() {
     return null;
   }
+
   render() {
-    return <span>{this.props.count}</span>;
+    const { count } = this.props;
+    return <span>{count}</span>;
   }
 }
 

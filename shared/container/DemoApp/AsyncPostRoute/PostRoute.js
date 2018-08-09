@@ -15,10 +15,14 @@ class PostRoute extends Component {
     super(props); // eslint-disable-line
     this.increment = this.increment.bind(this);
   }
+
   increment() {
-    this.props.incrementAction();
+    const { incrementAction } = this.props;
+    incrementAction();
   }
+
   render() {
+    const { post, counter } = this.props;
     return (
       <div>
         <Helmet>
@@ -32,13 +36,14 @@ class PostRoute extends Component {
             (fetch from: https://jsonplaceholder.typicode.com/posts/1)
           </small>
         </h4>
-        <p>{this.props.post.asyncPostExample.body}</p>
+        <p>{post.asyncPostExample.body}</p>
 
         <p>
-          Redux counter value:{' '}
-          <Counter count={this.props.counter.counterValue} />
+          Redux counter value: <Counter count={counter.counterValue} />
         </p>
-        <button onClick={this.increment}>Increment</button>
+        <button type="button" onClick={this.increment}>
+          Increment
+        </button>
       </div>
     );
   }
@@ -70,7 +75,6 @@ export default compose(
       // Execute the redux-thunk powered action that returns a Promise and
       // fetches the post.
       asyncDemo(),
-
     // Any time the post id changes we need to trigger the work.
     shouldWorkAgain: (prevProps, nextProps) => {
       // eslint-disable-line
