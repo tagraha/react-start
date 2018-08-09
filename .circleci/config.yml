@@ -8,6 +8,7 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/node:8.11.3-jessie
+      - image: yarnpkg/dev:latest
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
