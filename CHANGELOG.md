@@ -1,3 +1,16 @@
+#### 2.2.5 (2018-08-09)
+
+##### Other Changes
+
+* **package:**
+  *  update webpack ([6574da99](https://github.com/tagraha/react-start/commit/6574da99a3963bdc8de241a4a112027213d455d5))
+  *  update stuyle-loader ([2646771c](https://github.com/tagraha/react-start/commit/2646771cd5e48b23b5f16faa61011825ae2d59bb))
+  *  update eslint ([1de659e2](https://github.com/tagraha/react-start/commit/1de659e2d9d612d352af3f1246ef213bcf6d9687))
+  *  update styled-components ([15414c7c](https://github.com/tagraha/react-start/commit/15414c7ca6b6a774b0b781c7b4eece90d7751bb0))
+  *  update react-hot-loader ([43cc01da](https://github.com/tagraha/react-start/commit/43cc01da2dba2a6e83e9f49c0a29340736abea26))
+  *  update react ([95527706](https://github.com/tagraha/react-start/commit/95527706ba01c2701566471dfebc85ec26b584a6))
+  *  update helmet ([7e9fbaa6](https://github.com/tagraha/react-start/commit/7e9fbaa66ad9154a9a2a7c3f5508d7df9f3c92a3))
+
 #### 2.2.4 (2018-07-30)
 
 ##### Other Changes
