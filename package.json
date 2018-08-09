@@ -4,7 +4,7 @@
   "description": "heavily modified of react universally",
   "main": "build/server/index.js",
   "engines": {
-    "node": ">=6"
+    "node": ">= 6.9.0"
   },
   "scripts": {
     "analyze:client": "babel-node internal/scripts/analyze --client",
