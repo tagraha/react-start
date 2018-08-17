@@ -12,7 +12,7 @@ import config from '../../config';
 // eslint-disable-next-line no-unused-vars
 const [x, y, ...args] = process.argv;
 
-const optimize = args.findIndex(arg => arg === '--optimize') !== -1;
+const optimize = args.findIndex(arg => arg === 'optimize') !== -1;
 
 // First clear the build output dir.
 exec(`rimraf ${pathResolve(appRootDir.get(), config('buildOutputPath'))}`);
