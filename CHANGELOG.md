@@ -1,3 +1,10 @@
+#### 2.2.7 (2018-08-17)
+
+##### Build System / Dependencies
+
+* **args:**  update args for nodejs v10.9.0 compatibility ([64df2373](https://github.com/tagraha/react-start/commit/64df23735f5f65980d2bf6da5217ff1cec9eb25c))
+* **circleci:**  using node:10.8.0-jessie ([8a2c2322](https://github.com/tagraha/react-start/commit/8a2c2322437a3b3bc76ee34e29ec989c0862b492))
+
 #### 2.2.6 (2018-08-09)
 
 ##### Build System / Dependencies
