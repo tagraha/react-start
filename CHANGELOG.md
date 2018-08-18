@@ -1,3 +1,9 @@
+#### 2.2.8 (2018-08-18)
+
+##### Other Changes
+
+* **package:**  update uglifyjs-webpack-plugin ([65d4e52f](https://github.com/tagraha/react-start/commit/65d4e52f9dfd39e53f07e712320aa4d3d0307f5d))
+
 #### 2.2.7 (2018-08-17)
 
 ##### Build System / Dependencies
