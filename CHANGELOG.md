@@ -1,3 +1,22 @@
+#### 2.2.9 (2018-08-19)
+
+##### Other Changes
+
+* **gitignore:**  include package-lock ([fd081486](https://github.com/tagraha/react-start/commit/fd0814868490e7cc8805601a70814f36f8e8b230))
+* **package:**
+  *  update eslint-plugin-import & style-loader ([2e964eed](https://github.com/tagraha/react-start/commit/2e964eed8fcca0b7b2f3458727f15994dfba3d85))
+  *  update eslint-plugin-react ([7875f511](https://github.com/tagraha/react-start/commit/7875f51163968a982e4448ee77f37aeac32cad1a))
+  *  update eslint-config-prettier ([c07b1cdd](https://github.com/tagraha/react-start/commit/c07b1cddb8b0675f18de4a5a975cb24639053db0))
+  *  update eslint-config-airbnb ([2da286ea](https://github.com/tagraha/react-start/commit/2da286eacda40709f7efc63d928b237fa70e144e))
+  *  update enzyme-adapter-react-16 ([b2f1b39a](https://github.com/tagraha/react-start/commit/b2f1b39a29154303fd88fb36395dfbbf8e0da37d))
+  *  update react-tree-walker ([bd6408f6](https://github.com/tagraha/react-start/commit/bd6408f6684ea05caccdd12063067ab4040abae0))
+  *  update request ([b177de14](https://github.com/tagraha/react-start/commit/b177de147e3bdbc9df8963cc343d5200f23ed3d7))
+  *  update source-map-support ([7f6b5ee5](https://github.com/tagraha/react-start/commit/7f6b5ee5e1934be7bba2a3b880ef118eef9420a1))
+  *  update webpack ([1e12b087](https://github.com/tagraha/react-start/commit/1e12b0872ac044c2d36ebe5865ed63e6834e1d8b))
+  *  update eslint ([a546e82b](https://github.com/tagraha/react-start/commit/a546e82b6ced5213e13cef46ab17c476ab6cc1f2))
+  *  update enzyme ([ddfa0a58](https://github.com/tagraha/react-start/commit/ddfa0a5806093e05582bc7badd7e2a186b643fc7))
+  *  update babel-jest ([d256a95d](https://github.com/tagraha/react-start/commit/d256a95d4ef4534d8be07afc37a49f0f5c37e6f7))
+
 #### 2.2.8 (2018-08-18)
 
 ##### Other Changes
