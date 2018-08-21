@@ -1,3 +1,14 @@
+#### 2.2.10 (2018-08-21)
+
+##### Other Changes
+
+* **package:**
+  *  update babel-eslint ([327754c3](https://github.com/tagraha/react-start/commit/327754c36ff960c5342854997279beeabeea0db3))
+  *  update eslint-plugin-jsx-a11y ([a320f3fb](https://github.com/tagraha/react-start/commit/a320f3fb4ef66c17c7d682c33366cecc6d2601b0))
+  *  update jest ([5380eb82](https://github.com/tagraha/react-start/commit/5380eb825dca5380d8c1d7ab599719129d2d6238))
+  *  update lint-staged ([453c7cd1](https://github.com/tagraha/react-start/commit/453c7cd1378b0f6273c4188a0d9f650825ebf3bf))
+  *  update webpack ([4dbf3738](https://github.com/tagraha/react-start/commit/4dbf37389791b53e8e58736513eede57663a575b))
+
 #### 2.2.9 (2018-08-19)
 
 ##### Other Changes
