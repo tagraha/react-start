@@ -1,5 +1,6 @@
 import { asyncComponent } from 'react-async-component';
 
 export default asyncComponent({
-  resolve: () => import(/* webpackChunkName: "counter" */ './CounterRoute'),
+  resolve: () =>
+    import(/* webpackChunkName: "CounterRoute" */ './CounterRoute'),
 });
