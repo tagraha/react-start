@@ -1,3 +1,24 @@
+### 2.3.0 (2018-08-30)
+
+##### Other Changes
+
+* **package:**
+  *  update file-loader ([039cc2f7](https://github.com/tagraha/react-start/commit/039cc2f770c6a4e6a6948bcf34ab10c76049d8d2))
+  *  update enzyme-adapter-react-16 ([5aab186a](https://github.com/tagraha/react-start/commit/5aab186ae2b2e885163c9f40e426bdb606d11bb2))
+  *  update enzyme ([86636bb8](https://github.com/tagraha/react-start/commit/86636bb8648bfe663afbf9ea03903aaa7a0e6a2f))
+  *  update styled-components ([4e44748d](https://github.com/tagraha/react-start/commit/4e44748d92ccc5c715d1ef68f37dc1a22db9b162))
+  *  update react-hot-loader ([713432bf](https://github.com/tagraha/react-start/commit/713432bf70ebfa707f9d1695dd756a53833ecc8e))
+  *  update webpack ([7b5cb588](https://github.com/tagraha/react-start/commit/7b5cb58835fd99f59443c819eb6391f7c7ad5758))
+  *  update babel transform remove proptypes ([5fdc1173](https://github.com/tagraha/react-start/commit/5fdc1173da8362c462ae8dd01419a048b385a4f7))
+
+##### Refactors
+
+* **chunk:**  update build chunk file ([b5cae5f9](https://github.com/tagraha/react-start/commit/b5cae5f9296c639822552904463e32ce51b6511c))
+
+##### Tests
+
+* **component:**  adding test unit for 404 error component ([4c4e756c](https://github.com/tagraha/react-start/commit/4c4e756c889c9796684148c637f83c81e619dcfe))
+
 #### 2.2.10 (2018-08-21)
 
 ##### Other Changes
