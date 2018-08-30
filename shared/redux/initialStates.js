@@ -10,3 +10,5 @@ export const postMock = {
 export const counterMock = {
   counterValue: 0,
 };
+
+export const errorMock = {};
