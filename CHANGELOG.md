@@ -1,3 +1,25 @@
+#### 2.3.1 (2018-09-11)
+
+##### Other Changes
+
+* **package:**
+  *  update webpack-dev-middleware ([440a8316](https://github.com/tagraha/react-start/commit/440a83165f68e1d0a85a8d0f7b119b06cf38c40e))
+  *  update webpack-bundle-analyzer ([0c6612e6](https://github.com/tagraha/react-start/commit/0c6612e603d75fde56c85408ddbd9bc70aa4136a))
+  *  update webpack ([61e6188c](https://github.com/tagraha/react-start/commit/61e6188ca25fe3298ba23a0cc53d05947604c7ff))
+  *  update react-hot-loader & react-test-renderer ([a49f0fca](https://github.com/tagraha/react-start/commit/a49f0fca212dfab82e5788aa1e8b13f581956196))
+  *  update react & react-dom ([1a3a929e](https://github.com/tagraha/react-start/commit/1a3a929e8f926d1e9aa0d405f55b8f9403502475))
+  *  downgrade babel-loader to 7.1.4 ([138449ab](https://github.com/tagraha/react-start/commit/138449ab399bca7679c30e0ee9e69e35c6b835fd))
+  *  update babel-eslint ([9e7b4aea](https://github.com/tagraha/react-start/commit/9e7b4aea260f2114ed78c6f640766a184017135f))
+  *  update babel-loader ([a287beb2](https://github.com/tagraha/react-start/commit/a287beb269a4c1c8b7923c1ff76b037fbd45cdc1))
+  *  update enzyme ([25a96f97](https://github.com/tagraha/react-start/commit/25a96f97bb80ba352fbff220b782248f0187bbf9))
+  *  update enzyme-adapter-react-16 ([515e8907](https://github.com/tagraha/react-start/commit/515e89076bb62ca725397c8316f14d8821da427d))
+  *  update webpack ([af25a0be](https://github.com/tagraha/react-start/commit/af25a0bedad164878bde84954a50cbb8c144747d))
+  *  update webpack-dev-middleware ([082aa61d](https://github.com/tagraha/react-start/commit/082aa61da18780cee158025483cb8fb881546ac0))
+  *  update webpack-hot-middleware ([b9605afb](https://github.com/tagraha/react-start/commit/b9605afb6d703607b55c834639a717d70ef6f723))
+  *  update style-loader ([4b575366](https://github.com/tagraha/react-start/commit/4b5753665224cc883ab682fa36168035a1e9dcb2))
+  *  dependencies & devDependencies adjustment ([0a24e522](https://github.com/tagraha/react-start/commit/0a24e522bd94fe237b30e23c6c0a41b3797c2fd9))
+  *  move uglifyjs-webpack-plugin to devDependencies ([ce6e9de8](https://github.com/tagraha/react-start/commit/ce6e9de84e50a08753a59120b1e6a532941e7fa2))
+
 ### 2.3.0 (2018-08-30)
 
 ##### Other Changes
