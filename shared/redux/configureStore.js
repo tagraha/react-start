@@ -1,5 +1,4 @@
 import { createStore, applyMiddleware, combineReducers, compose } from 'redux';
-import { createLogger } from 'redux-logger';
 import thunk from 'redux-thunk';
 import axios from 'axios';
 
@@ -11,22 +10,28 @@ const reducer = combineReducers({
   post,
 });
 
-const logger = createLogger({
-  collapsed: true,
-});
+function craftMidleware() {
+  if (process.env.NODE_ENV === 'development') {
+    const { createLogger } = require('redux-logger');
+
+    const logger = createLogger({
+      collapsed: true,
+    });
+
+    return applyMiddleware(
+      logger,
+      // Initialising redux-thunk with extra arguments will pass the below
+      // arguments to all the redux-thunk actions. Below we are passing a
+      // preconfigured axios instance which can be used to fetch data with.
+      // @see https://github.com/gaearon/redux-thunk
+      thunk.withExtraArgument({ axios }),
+    );
+  }
+  return applyMiddleware(thunk.withExtraArgument({ axios }));
+}
 
 function configureStore(initialState) {
-  const middleware =
-    process.env.NODE_ENV === 'development'
-      ? applyMiddleware(
-          logger,
-          // Initialising redux-thunk with extra arguments will pass the below
-          // arguments to all the redux-thunk actions. Below we are passing a
-          // preconfigured axios instance which can be used to fetch data with.
-          // @see https://github.com/gaearon/redux-thunk
-          thunk.withExtraArgument({ axios }),
-        )
-      : applyMiddleware(thunk.withExtraArgument({ axios }));
+  const middleware = craftMidleware();
 
   const enhancers = compose(
     // Middleware store enhancer.
