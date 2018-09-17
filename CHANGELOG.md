@@ -1,3 +1,25 @@
+#### 2.3.2 (2018-09-17)
+
+##### Build System / Dependencies
+
+* **uglify:**  update uglifyjs-webpack-plugin option ([4501f063](https://github.com/tagraha/react-start/commit/4501f063fcb763eb9dc09273ecf79c4658c7ddcd))
+* **logger:**  exclude redux-logger on production build ([92a7f840](https://github.com/tagraha/react-start/commit/92a7f84052ab37d1cf1543454b9f15e1af059aba))
+
+##### Other Changes
+
+* **package:**
+  *  update eslint ([37e27562](https://github.com/tagraha/react-start/commit/37e27562fa23dc074a2761e24a3a1c1ef71e9d47))
+  *  update webpack-hot-middleware ([0bb8d931](https://github.com/tagraha/react-start/commit/0bb8d931adb6979e64ac58b880690d7b72c9535f))
+  *  update webpack ([85e7e29f](https://github.com/tagraha/react-start/commit/85e7e29f4e6bb064701ee351f2beeca62a596721))
+  *  update react-test-renderer ([1b9b1b3e](https://github.com/tagraha/react-start/commit/1b9b1b3e0a52f3b5f1112dcc035f187e3331974b))
+  *  update react ([e0280182](https://github.com/tagraha/react-start/commit/e028018293a61215a839191fcfdc75d7d82d28a5))
+  *  rollback babel-loader ([01af6630](https://github.com/tagraha/react-start/commit/01af663060a488720aa7849e9024e370d98213b7))
+  *  update webpack-bundle-analyzer ([e2d1022d](https://github.com/tagraha/react-start/commit/e2d1022da514283e35cc853caf773087ac0f7e45))
+  *  udpate istanbul-api & istanbul reports ([70204466](https://github.com/tagraha/react-start/commit/70204466a2b2d14b9fce5e864f8237fb5bcbd6f0))
+  *  update eslint ([585af7d8](https://github.com/tagraha/react-start/commit/585af7d836677bdd924a534bbda81c9ba93b6086))
+  *  update babel-loader ([385eeec8](https://github.com/tagraha/react-start/commit/385eeec86921fa5091365800195d3f1d93472b4d))
+  *  update babel-jest ([1772e7eb](https://github.com/tagraha/react-start/commit/1772e7ebeb372f2a860355020b01c58485fa0216))
+
 #### 2.3.1 (2018-09-11)
 
 ##### Other Changes
