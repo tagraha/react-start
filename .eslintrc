@@ -31,6 +31,7 @@
     "react/jsx-one-expression-per-line": "off",
     "import/no-useless-path-segments": "off",
     "implicit-arrow-linebreak": "off",
-    "operator-linebreak": "off"
+    "operator-linebreak": "off",
+    "max-len": "off"
   }
 }
