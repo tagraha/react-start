@@ -15,7 +15,6 @@
     "deploy": "babel-node internal/scripts/deploy",
     "develop": "cross-env DEPLOYMENT=development babel-node internal/development",
     "lint": "eslint client server shared config internal",
-    "precommit": "lint-staged",
     "preinstall": "node internal/scripts/preinstall",
     "prepush": "jest",
     "start": "cross-env NODE_ENV=production node build/server",
@@ -26,6 +25,11 @@
     "release:patch": "changelog -p -u https://github.com/tagraha/react-start && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin --tags",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "*.js": [
@@ -135,7 +139,7 @@
     "file-loader": "2.0.0",
     "glob": "7.1.2",
     "html-webpack-plugin": "3.2.0",
-    "husky": "0.14.3",
+    "husky": "1.0.0",
     "istanbul-api": "2.0.6",
     "istanbul-reports": "2.0.1",
     "jest": "23.5.0",
