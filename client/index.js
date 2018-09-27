@@ -33,7 +33,7 @@ const asyncComponentsRehydrateState =
   window.__ASYNC_COMPONENTS_REHYDRATE_STATE__;
 
 // Grab the state from a global variable injected into the server-generated HTML
-const preloadedState = window.__initialData__;
+// const preloadedState = window.__initialData__;
 
 // Get any "rehydrate" state sent back by the server
 // eslint-disable-next-line no-underscore-dangle

@@ -1,10 +1,9 @@
 // counter.js
+import { postMock } from './../initialStates';
 
 // Actions
 const ASYNC_DEMO = 'ASYNC_DEMO';
 const ASYNC_DEMO_FAILED = 'ASYNC_DEMO_FAILED';
-
-import { postMock } from './../initialStates';
 
 // Reducer
 export default function reducer(state = postMock, action = {}) {
