@@ -50,6 +50,5 @@ export const loadPost = () => (dispatch, getState, { axios }) =>
       dispatch(fetchData(res.data));
     })
     .catch(err => {
-      console.log('err');
       dispatch(fetchDataFailed());
     });
