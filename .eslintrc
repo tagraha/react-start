@@ -34,5 +34,6 @@
     "operator-linebreak": "off",
     "max-len": "off",
     "no-unused-expressions": "off",
+    "object-curly-newline": "off"
   }
 }
