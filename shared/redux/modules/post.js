@@ -49,7 +49,7 @@ export const loadPost = () => (dispatch, getState, { axios }) =>
     .then(res => {
       dispatch(fetchData(res.data));
     })
+    // eslint-disable-next-line
     .catch(err => {
-      //eslint-disable-line no-unused-var
       dispatch(fetchDataFailed());
     });
