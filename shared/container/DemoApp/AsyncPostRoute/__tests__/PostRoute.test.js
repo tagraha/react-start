@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { shallow } from 'enzyme';
-import PostRoute from '../PostRoute';
 import configureStore from 'redux-mock-store';
+import PostRoute from '../PostRoute';
 import { postMock } from './../../../../redux/initialStates';
 
 describe('<PostRoute />', () => {
