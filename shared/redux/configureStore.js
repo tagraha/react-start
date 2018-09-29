@@ -12,7 +12,7 @@ const reducer = combineReducers({
 
 function craftMidleware() {
   if (process.env.NODE_ENV === 'development') {
-    const { createLogger } = require('redux-logger');
+    const { createLogger } = require('redux-logger'); // eslint-disable-line global-require
 
     const logger = createLogger({
       collapsed: true,
@@ -57,7 +57,7 @@ function configureStore(initialState) {
     // Enable Webpack hot module replacement for reducers. This is so that we
     // don't lose all of our current application state during hot reloading.
     module.hot.accept(reducer, () => {
-      const nextRootReducer = require(reducer).default; // eslint-disable-line global-require
+      const nextRootReducer = require(reducer).default; // eslint-disable-line global-require, import/no-dynamic-require
 
       store.replaceReducer(nextRootReducer);
     });

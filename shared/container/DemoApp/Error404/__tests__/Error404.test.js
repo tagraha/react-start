@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { shallow } from 'enzyme';
-import Error404 from '../Error404';
 import configureStore from 'redux-mock-store';
+import Error404 from '../Error404';
 import { errorMock } from './../../../../redux/initialStates';
 
 describe('<Error404 />', () => {

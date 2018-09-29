@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 /**
  * The is the HTML shell for our React Application.
  */
+
 function HTML(props) {
   const { htmlAttributes, headerElements, bodyElements, appBodyString } = props;
 

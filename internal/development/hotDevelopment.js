@@ -117,8 +117,9 @@ class HotDevelopment {
   }
 
   dispose() {
-    const safeDisposer = server =>
+    const safeDisposer = server => {
       server ? server.dispose() : Promise.resolve();
+    };
 
     // First the hot client server.
     return (

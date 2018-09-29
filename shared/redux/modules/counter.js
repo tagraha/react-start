@@ -1,8 +1,8 @@
 // counter.js
+import { counterMock } from './../initialStates';
 
 // Actions
 const INCREMENT = 'INCREMENT';
-import { counterMock } from './../initialStates';
 
 // Reducer
 export default function reducer(state = counterMock, action = {}) {
