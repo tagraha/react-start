@@ -190,7 +190,7 @@
     "semi": true,
     "singleQuote": true,
     "trailingComma": "all",
-    "arrow-parens": false,
+    "arrow-parens": "always",
     "object-curly-newline": false
   }
 }
