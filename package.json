@@ -189,6 +189,8 @@
   "prettier": {
     "semi": true,
     "singleQuote": true,
-    "trailingComma": "all"
+    "trailingComma": "all",
+    "arrow-parens": false,
+    "object-curly-newline": false
   }
 }

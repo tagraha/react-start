@@ -33,7 +33,6 @@
     "implicit-arrow-linebreak": "off",
     "operator-linebreak": "off",
     "max-len": "off",
-    "no-unused-expressions": "off",
-    "object-curly-newline": "off"
+    "no-unused-expressions": "off"
   }
 }
