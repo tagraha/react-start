@@ -32,6 +32,7 @@
     "import/no-useless-path-segments": "off",
     "implicit-arrow-linebreak": "off",
     "operator-linebreak": "off",
-    "max-len": "off"
+    "max-len": "off",
+    "no-unused-expressions": "off",
   }
 }
