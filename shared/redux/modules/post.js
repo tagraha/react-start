@@ -46,10 +46,10 @@ export function fetchDataFailed() {
 export const loadPost = () => (dispatch, getState, { axios }) =>
   axios
     .get('https://jsonplaceholder.typicode.com/posts/1')
-    .then(res => {
+    .then((res) => {
       dispatch(fetchData(res.data));
     })
     // eslint-disable-next-line
-    .catch(err => {
+    .catch((err) => {
       dispatch(fetchDataFailed());
     });
