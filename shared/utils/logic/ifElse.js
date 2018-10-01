@@ -17,6 +17,7 @@ const execIfFunc = x => (typeof x === 'function' ? x() : x);
  *   ifDev('foo', () => 'lazy resolved');  // => 'foo'
  */
 export default function ifElse(condition) {
-  return (then, or) =>
+  return (then, or) => {
     execIfFunc(condition) ? execIfFunc(then) : execIfFunc(or);
+  };
 }
