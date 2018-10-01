@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
 class CounterRoute extends Component {
   constructor(props) {
@@ -37,13 +36,5 @@ class CounterRoute extends Component {
     );
   }
 }
-
-CounterRoute.propTypes = {
-  counter: PropTypes.number,
-};
-
-CounterRoute.defaultProps = {
-  counter: 0,
-};
 
 export default CounterRoute;
