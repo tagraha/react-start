@@ -12,7 +12,7 @@ import values from '../../config/values';
 const usesDevVendorDLL = bundleConfig =>
   bundleConfig.devVendorDLL != null && bundleConfig.devVendorDLL.enabled;
 
-const vendorDLLsFailed = err => {
+const vendorDLLsFailed = (err) => {
   log({
     title: 'vendorDLL',
     level: 'error',
@@ -94,10 +94,10 @@ class HotDevelopment {
       // Then start the client development server.
       .then(
         () =>
-          new Promise(resolve => {
+          new Promise((resolve) => {
             const { createCompiler } = clientBundle;
             const compiler = createCompiler();
-            compiler.plugin('done', stats => {
+            compiler.plugin('done', (stats) => {
               if (!stats.hasErrors()) {
                 resolve(compiler);
               }
@@ -107,7 +107,7 @@ class HotDevelopment {
         vendorDLLsFailed,
       )
       // Then start the node development server(s).
-      .then(clientCompiler => {
+      .then((clientCompiler) => {
         this.hotNodeServers = nodeBundles.map(
           ({ name, createCompiler }) =>
             // $FlowFixMe
@@ -117,7 +117,7 @@ class HotDevelopment {
   }
 
   dispose() {
-    const safeDisposer = server => {
+    const safeDisposer = (server) => {
       server ? server.dispose() : Promise.resolve();
     };
 

@@ -44,7 +44,7 @@ class HotClientServer {
       });
     });
 
-    compiler.plugin('done', stats => {
+    compiler.plugin('done', (stats) => {
       if (stats.hasErrors()) {
         log({
           title: 'client',

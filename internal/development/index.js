@@ -60,7 +60,7 @@ choosePort(host, config('port'))
         });
         devServer.dispose().then(() => {
           // Make sure our new webpack bundleConfigs aren't in the module cache.
-          Object.keys(require.cache).forEach(modulePath => {
+          Object.keys(require.cache).forEach((modulePath) => {
             if (modulePath.indexOf('config') !== -1) {
               delete require.cache[modulePath];
             } else if (modulePath.indexOf('internal') !== -1) {

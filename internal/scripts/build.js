@@ -22,7 +22,7 @@ Object.keys(config('bundles'))
   // And the "additional" bundle names
   .concat(Object.keys(config('additionalNodeBundles')))
   // And then build them all.
-  .forEach(bundleName => {
+  .forEach((bundleName) => {
     const compiler = webpack(
       webpackConfigFactory({ target: bundleName, optimize }),
     );
