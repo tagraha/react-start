@@ -17,7 +17,6 @@ const execIfFunc = x => (typeof x === 'function' ? x() : x);
  *   ifDev('foo', () => 'lazy resolved');  // => 'foo'
  */
 export default function ifElse(condition) {
-  return (then, or) =>
+  return (then, or) => // eslint-disable-line
     execIfFunc(condition) ? execIfFunc(then) : execIfFunc(or);
-
 }
