@@ -15,7 +15,7 @@ class CounterRoute extends Component {
   }
 
   render() {
-    const { counter } = this.props;
+    const { counter } = this.state;
     return (
       <div>
         <h3>
