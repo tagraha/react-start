@@ -1,3 +1,66 @@
+#### 2.3.3 (2018-10-05)
+
+##### Build System / Dependencies
+
+* **lint:**
+  *  fix react/no-unused-prop-types ([f6827827](https://github.com/tagraha/react-start/commit/f68278276eb708cb4050b71280692cb92daa5425))
+  *  fix no-confusing-arrow ([bedce1ea](https://github.com/tagraha/react-start/commit/bedce1ea83d1a1400ab5f3dc42e4cf6c7990cd40))
+  *  fix allow-parens ([e4393cd8](https://github.com/tagraha/react-start/commit/e4393cd8aee7fad70ad97b733ccee5474b2ef9f8))
+  *  fix object-curly-newline ([c56d432d](https://github.com/tagraha/react-start/commit/c56d432dacb123233a9758fdaa0331ea083df3b5))
+  *  fix object-curly-newline ([61ff7fad](https://github.com/tagraha/react-start/commit/61ff7fadcc542017d1664af91e6191988a24eaa5))
+  *  fix arrow-parens ([be834380](https://github.com/tagraha/react-start/commit/be834380961d0d1dd2d780d8a27da244b510f08d))
+  *  fix arrow-parens ([18b65b03](https://github.com/tagraha/react-start/commit/18b65b03e450c593c582f23635993f27f3378128))
+  *  fix import/first ([c60aa9e4](https://github.com/tagraha/react-start/commit/c60aa9e434dbf06a36b942d8e20f76dbc8154f20))
+  *  global require ([aaaa7454](https://github.com/tagraha/react-start/commit/aaaa7454c8f008aae568e0dae615bc7d7f6a3e50))
+  *  turn off object-curly-newline ([41603a33](https://github.com/tagraha/react-start/commit/41603a33b790daf749604fbf9ffbc9d1f32bee55))
+  *  fix object-curly-newline ([10001eb6](https://github.com/tagraha/react-start/commit/10001eb6476fc0023444e8d2da58860a06442a01))
+  *  fix object-curly-newline ([249f0a89](https://github.com/tagraha/react-start/commit/249f0a89501658788f65d286e5fda0f67cd18255))
+  *  fix object-curly-newline ([928530fa](https://github.com/tagraha/react-start/commit/928530fa915594242d7f00628a1650fdf4895732))
+  *  fix object-curly-newline ([e91fe1ab](https://github.com/tagraha/react-start/commit/e91fe1aba3263b7fffa7d913d5e6d1771dc4ccaa))
+  *  fix object-curly-newline ([5bc0383c](https://github.com/tagraha/react-start/commit/5bc0383cdf6904daa62cc7bf877356ab916a9eaf))
+  *  fix object-curly-newline ([20b6c706](https://github.com/tagraha/react-start/commit/20b6c7069b0833174d7c9af510ba3aa25cf9d790))
+  *  fix import/order ([03d6e20c](https://github.com/tagraha/react-start/commit/03d6e20ce98bfb8b767335e35061f31c37249518))
+  *  fix no-console ([4540cca2](https://github.com/tagraha/react-start/commit/4540cca2b49a5f6b4f748a0ba211f76fa99f960a))
+  *  turn off no-unused-expressions ([b7a8dac4](https://github.com/tagraha/react-start/commit/b7a8dac4486cf0a4804c117d2370d825a3e864e1))
+  *  remove loading component for lint fix ([f83a6bd2](https://github.com/tagraha/react-start/commit/f83a6bd292a80009baf71f947223e418c0af753c))
+  *  fix eslint ([58de24de](https://github.com/tagraha/react-start/commit/58de24de4200c969dc62d65034efe4628718e1d7))
+  *  import/order fix ([38d4f297](https://github.com/tagraha/react-start/commit/38d4f2975295ce330af90756efd8591b09f54338))
+  *  fix eslint error / warning ([066f0c3b](https://github.com/tagraha/react-start/commit/066f0c3b03f2be1673be65c577028d4ac8d954e6))
+* **hooks:**  update lint-staged for husky hooks ([f932f990](https://github.com/tagraha/react-start/commit/f932f99057f1955ac301079f3687c1847c124e3b))
+* **prettier:**  update arrow-parens ([bf94a234](https://github.com/tagraha/react-start/commit/bf94a234bb18870e9fb581a46ae3aae4e24aba06))
+* **fix:**  fix no-unused-vars ([46293796](https://github.com/tagraha/react-start/commit/462937965d74d198cb12721f9967309614c9b717))
+* **eslint:**  update eslintrc ([f1702ecf](https://github.com/tagraha/react-start/commit/f1702ecf1e52eb809231d6e307fb352461da08e9))
+* **husky:**  update husky precommit ([dd24378c](https://github.com/tagraha/react-start/commit/dd24378c044966496ca42ae2704e009e7789110f))
+
+##### Bug Fixes
+
+* **component:**  fix counter number ([78a1e796](https://github.com/tagraha/react-start/commit/78a1e7962b2750c2528bd818cc68c1280c6743f7))
+* **build:**
+  *  fix error on build ([982727a6](https://github.com/tagraha/react-start/commit/982727a67d199d428a520ff8de5392f3a0d00271))
+  *  fix broken build ([8af866a6](https://github.com/tagraha/react-start/commit/8af866a62e7a04e5b45ee09a64f814a15482fc18))
+* **prettier:**
+  *  fix .prettierrc ([7292022a](https://github.com/tagraha/react-start/commit/7292022af60310b2d9d676c00125f519fd9a8dbb))
+  *  fix arrowParens options ([1590e72d](https://github.com/tagraha/react-start/commit/1590e72d3b5683f3292186c98b8df8f6da4a0473))
+
+##### Other Changes
+
+* **package:**
+  *  update babel-plugin-transform-react-remove-prop-types ([bbdd5562](https://github.com/tagraha/react-start/commit/bbdd5562a515f2c31712d4a69fe6ee50c3b297f1))
+  *  update enzyme ([d7a218bd](https://github.com/tagraha/react-start/commit/d7a218bdd36222c4bb4a74a4e50df4e8c2d37aa1))
+  *  update eslint ([b3aafb15](https://github.com/tagraha/react-start/commit/b3aafb15ef7746c250b5d7c6756290f31d5d2266))
+  *  update eslint-config-prettier ([068b7f17](https://github.com/tagraha/react-start/commit/068b7f172c852372a3a6cf378bd6c6da53d3cd7f))
+  *  update lint-staged ([26748a8a](https://github.com/tagraha/react-start/commit/26748a8adb26c5f3394b6fc8d481041845eff63d))
+  *  update prettier ([9c158406](https://github.com/tagraha/react-start/commit/9c1584061dc7ec8e1161dd36776605ad3c553ea9))
+  *  upgrade devDependencies ([93732b0c](https://github.com/tagraha/react-start/commit/93732b0c1487fa056007e43c22be44ab44dfedb1))
+  *  update webpack ([55b7d86c](https://github.com/tagraha/react-start/commit/55b7d86cf309ab01a14481f3d20f34dd93667753))
+  *  update webpack-hot-middleware ([95d9ce94](https://github.com/tagraha/react-start/commit/95d9ce948f2ed7f466ef0031ed4c4ca8a3c7da83))
+  *  update webpack-dev-middleware ([0c04119e](https://github.com/tagraha/react-start/commit/0c04119e2157dabe095df4bb6f423157475f7c06))
+  *  update webpack ([aa3f4c0f](https://github.com/tagraha/react-start/commit/aa3f4c0f783ad887ef9308b9b82d6f2182c9d404))
+  *  update uglifyjs-webpack-plugin ([a08e0743](https://github.com/tagraha/react-start/commit/a08e0743b53c2d1366e5eb7f64f9124d911415d7))
+  *  update styled-components ([cb52e7e0](https://github.com/tagraha/react-start/commit/cb52e7e037f4b5dec1328e21c0891ebcfe2fbc91))
+  *  update react-hot-loader ([7d41172f](https://github.com/tagraha/react-start/commit/7d41172f9f644450f168c1c7510e7dcf98d709dd))
+  *  update react ([130fa461](https://github.com/tagraha/react-start/commit/130fa461a220e9835c738d81b3b8782f245b02cf))
+
 #### 2.3.2 (2018-09-17)
 
 ##### Build System / Dependencies
