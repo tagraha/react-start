@@ -1,3 +1,11 @@
+#### 2.3.4 (2018-10-08)
+
+##### Other Changes
+
+* **package:**
+  *  update husky ([1c26db26](https://github.com/tagraha/react-start/commit/1c26db2692b21a4acdb80dbd0d67f015bfc7c8ff))
+  *  removing glints-aries ([aa0606a6](https://github.com/tagraha/react-start/commit/aa0606a6d90eb8745c78edd80d21e5f885a22b1b))
+
 #### 2.3.3 (2018-10-05)
 
 ##### Build System / Dependencies
