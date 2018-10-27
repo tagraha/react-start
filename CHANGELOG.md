@@ -1,3 +1,22 @@
+#### 2.3.5 (2018-10-27)
+
+##### Other Changes
+
+* **package:**
+  *  update webpack ([3caa06db](https://github.com/tagraha/react-start/commit/3caa06db1fafa0bb6e59229121a489058ce3edf4))
+  *  update react-test-renderer ([7b61438c](https://github.com/tagraha/react-start/commit/7b61438c1ff43ed5a745dd717b5fb2220bf70d58))
+  *  update react ([9d4cdaa5](https://github.com/tagraha/react-start/commit/9d4cdaa5c5db8fd7a460d18cb0820de830822b38))
+  *  update express ([fc82ba03](https://github.com/tagraha/react-start/commit/fc82ba037d214b33c23fcbd2e9abeca3d876fb3b))
+  *  update webpack-bundle-analyzer ([39e780e2](https://github.com/tagraha/react-start/commit/39e780e22a125f8b2bdcc094737d90eb7a6c0fe7))
+  *  update styled-components ([e26d0b20](https://github.com/tagraha/react-start/commit/e26d0b201c74afafdf3c8eafed75e12107885fa4))
+  *  update helmet ([99fda7b8](https://github.com/tagraha/react-start/commit/99fda7b8204d2b5a2914d82f8571485efe46e94d))
+  *  webpack-hot-middleware ([76ea1eb7](https://github.com/tagraha/react-start/commit/76ea1eb756d82fff661859a699fa1cf6653cbae8))
+  *  updating style-loader ([0ae1733b](https://github.com/tagraha/react-start/commit/0ae1733bf18e37c60080d386b7bf6c832b87c698))
+  *  update husky ([84a4e6f4](https://github.com/tagraha/react-start/commit/84a4e6f4865554de03e59ca69bd10eb6b420e5c4))
+  *  update eslint ([d1e3c3f4](https://github.com/tagraha/react-start/commit/d1e3c3f445bb7e19454eba37fda40e3d853f6f94))
+  *  update dotenv ([f65d7c99](https://github.com/tagraha/react-start/commit/f65d7c99d1fcc812c76e2f4ee752281da04bf768))
+  *  upgrade redux ([b729a33e](https://github.com/tagraha/react-start/commit/b729a33e57ced86a2218164483908351f2bdd0eb))
+
 #### 2.3.4 (2018-10-08)
 
 ##### Other Changes
