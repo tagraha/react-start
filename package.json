@@ -124,7 +124,7 @@
     "babel-preset-stage-3": "6.24.1",
     "babel-template": "6.26.0",
     "chokidar": "2.0.4",
-    "css-loader": "1.0.0",
+    "css-loader": "1.0.1",
     "detect-port-alt": "1.1.6",
     "enzyme": "3.7.0",
     "enzyme-adapter-react-16": "1.6.0",
