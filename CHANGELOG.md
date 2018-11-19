@@ -1,3 +1,29 @@
+#### 2.3.6 (2018-11-19)
+
+##### Other Changes
+
+* **package:**
+  *  update offline-plugin ([523564c3](https://github.com/tagraha/react-start/commit/523564c3bfcba84b15f6919e3aebf5e9593bcaa3))
+  *  update helmet ([02b3ce53](https://github.com/tagraha/react-start/commit/02b3ce53ab0d498b88f0037c281c398701cc902c))
+  *  update enzyme-adapter-react-16 ([f00d5ee7](https://github.com/tagraha/react-start/commit/f00d5ee7b7e17133b2c631c2d96b0fe2a3040684))
+  *  update eslint ([a125d7aa](https://github.com/tagraha/react-start/commit/a125d7aafab8d39a56481e6d4a16b4cc98f1b395))
+  *  update eslint-config-prettier ([6d8ebac7](https://github.com/tagraha/react-start/commit/6d8ebac79ce3186741e264d9576657991f926917))
+  *  update prettier ([d188d6f5](https://github.com/tagraha/react-start/commit/d188d6f51a96695887f45f222fcd02491e4ce2d6))
+  *  update react-dev-utils ([a7735559](https://github.com/tagraha/react-start/commit/a773555945af1563703fed8da9cb73bff70b3c3b))
+  *  update react ([f73f4b49](https://github.com/tagraha/react-start/commit/f73f4b49d44154dcd46828027cd86d112f5c2cee))
+  *  update webpack ([5db08207](https://github.com/tagraha/react-start/commit/5db0820779e6897ac6db76e57fed27d23f14bb47))
+  *  update react-test-renderer ([d2b628dc](https://github.com/tagraha/react-start/commit/d2b628dc81930d1c021bb561246422dc49fe5d74))
+  *  update react ([dd46e713](https://github.com/tagraha/react-start/commit/dd46e713faf8b20727b49e5df56648a857b9b71c))
+  *  update react ([d2bff20b](https://github.com/tagraha/react-start/commit/d2bff20bae628c4c66bc79e631e5424b9a2f577e))
+  *  update eslint-plugin-jsx-a11y ([794fbd68](https://github.com/tagraha/react-start/commit/794fbd68a0214472b729c83acbaf46fcaa3ffcc1))
+  *  update husky ([9ec65b9c](https://github.com/tagraha/react-start/commit/9ec65b9cebb530916e2e3723452ce112420ecbf6))
+  *  update regenerator-runtime ([d13b7b77](https://github.com/tagraha/react-start/commit/d13b7b7773c78bd5679f510c60dc865b2093b7e7))
+  *  update semver ([8f40c519](https://github.com/tagraha/react-start/commit/8f40c5199f57e8c44723946a7df71a1a4c8d3b4f))
+  *  update eslint ([0ed37971](https://github.com/tagraha/react-start/commit/0ed37971be466492394ebf98df3acd87334d0040))
+  *  update styled-components ([239175d9](https://github.com/tagraha/react-start/commit/239175d97e3f5982ab85869114f8acd1e832ea73))
+  *  update react-redux ([4e408e19](https://github.com/tagraha/react-start/commit/4e408e198994d18b09deb33f0f9680742974ed8a))
+  *  update css-loader ([9e6eb500](https://github.com/tagraha/react-start/commit/9e6eb5005148b14e35e0b10133595ff173e959ed))
+
 #### 2.3.5 (2018-10-27)
 
 ##### Other Changes
