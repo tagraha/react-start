@@ -1,3 +1,11 @@
+#### 2.3.7 (2018-12-03)
+
+##### Other Changes
+
+* **package:**
+  *  update prettier ([0e317992](https://github.com/tagraha/react-start/commit/0e31799276bda5f5b10210f7b7d7f54af37c1785))
+  *  update styled-components ([bd39de4d](https://github.com/tagraha/react-start/commit/bd39de4d1a2dae22c4793004fa7bcef58b418a7c))
+
 #### 2.3.6 (2018-11-19)
 
 ##### Other Changes
