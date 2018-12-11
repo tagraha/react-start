@@ -1,3 +1,17 @@
+#### 2.3.8 (2018-12-11)
+
+##### Bug Fixes
+
+* **test:**  fix failed test after update react-redux ([1ac529f1](https://github.com/tagraha/react-start/commit/1ac529f120aebb520222d5a4fcf334b2e943db49))
+
+##### Other Changes
+
+* **package:**
+  *  update eslint ([9bea9071](https://github.com/tagraha/react-start/commit/9bea9071aa115d55f69b1eb7ca8ae8a6af0cb902))
+  *  update husky ([479d8a3d](https://github.com/tagraha/react-start/commit/479d8a3d5aa51f2c6969bdc3e99026628d984db0))
+  *  update react-redux ([0185b8a6](https://github.com/tagraha/react-start/commit/0185b8a66bbba9d227caed119f17888bb6804d86))
+  *  move react-hot-loader to dependencies ([a766ec31](https://github.com/tagraha/react-start/commit/a766ec315ee1560e99b111cb0fd766bf69bcad8d))
+
 #### 2.3.7 (2018-12-03)
 
 ##### Other Changes
