@@ -10,7 +10,7 @@ describe('<PostRoute />', () => {
   test('renders', () => {
     const mockStore = configureStore();
     const store = mockStore(postMock);
-    const wrapper = shallow(<PostRoute store={store} />);
+    const wrapper = shallow(<PostRoute />);
     expect(wrapper).toMatchSnapshot();
   });
 });

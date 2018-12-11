@@ -75,8 +75,8 @@ export default compose(
       // Execute the redux-thunk powered action that returns a Promise and
       // fetches the post.
       asyncDemo(),
-    // Any time the post id changes we need to trigger the work.
-    shouldWorkAgain: (prevProps, nextProps) => {
+      // Any time the post id changes we need to trigger the work.
+      shouldWorkAgain: (prevProps, nextProps) => {
       // eslint-disable-line
       prevProps.post.id !== nextProps.post.id;
     },
