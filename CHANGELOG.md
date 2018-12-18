@@ -19,6 +19,31 @@
 
 * **eslint:**  fix eslint warning ([cc945cfb](https://github.com/tagraha/react-start/commit/cc945cfbbf864a60d947a158d8b5af3f5c90020b))
 
+##### Tests
+
+* **postRoute:**  update snapshot testing ([bb3b7807](https://github.com/tagraha/react-start/commit/bb3b78078017a047751248148c698b58603312ed))
+
+#### 2.3.9 (2018-12-18)
+
+##### Bug Fixes
+
+* **react-redux:**  downgrade react-redux version due to breaking change ([f582df92](https://github.com/tagraha/react-start/commit/f582df926b5e5514ce9ec1e49b2d168f86c98b7c))
+
+##### Other Changes
+
+* **package:**
+  *  update husky ([4a2ee65b](https://github.com/tagraha/react-start/commit/4a2ee65bc12c1fe70af45597836d595e7059608d))
+  *  update raf ([31ea18a1](https://github.com/tagraha/react-start/commit/31ea18a11ca362eff0290d35c779c93906169156))
+  *  update dotenv ([db820470](https://github.com/tagraha/react-start/commit/db820470774606b0b60af9b7e267a626dcaacb9b))
+  *  update react-hot-loader ([db53d982](https://github.com/tagraha/react-start/commit/db53d9824ed1940bf2f3e85f68307eb50f99b964))
+  *  update babel-plugin ([544a4778](https://github.com/tagraha/react-start/commit/544a47787d20ad93eda09b72fccc580e9170e28f))
+  *  update webpack ([7e34990d](https://github.com/tagraha/react-start/commit/7e34990d1b85b29141d60e46c241e590867d4364))
+  *  update normalize.css & node notifier ([32e8ef81](https://github.com/tagraha/react-start/commit/32e8ef81b16c83006470f7e8e315881a51c41fc7))
+
+##### Refactors
+
+* **eslint:**  fix eslint warning ([cc945cfb](https://github.com/tagraha/react-start/commit/cc945cfbbf864a60d947a158d8b5af3f5c90020b))
+
 #### 2.3.8 (2018-12-11)
 
 ##### Bug Fixes
