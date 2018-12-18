@@ -94,7 +94,7 @@
     "react-helmet": "5.2.0",
     "react-hot-loader": "4.6.0",
     "react-jobs": "1.0.1",
-    "react-redux": "6.0.0",
+    "react-redux": "5.1.1",
     "react-router-dom": "4.3.1",
     "react-tree-walker": "4.3.0",
     "redux": "4.0.1",
