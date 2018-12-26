@@ -1,3 +1,13 @@
+#### 2.3.10 (2018-12-26)
+
+##### Other Changes
+
+* **package:**
+  *  enzyme-adapter-react-16 update ([9a8089a2](https://github.com/tagraha/react-start/commit/9a8089a274845ab35006546463886bd06dece221))
+  *  update react-test-renderer ([d109cf14](https://github.com/tagraha/react-start/commit/d109cf1496971170069aff060e0d6b788c4bc0bb))
+  *  update react ([0ae3965d](https://github.com/tagraha/react-start/commit/0ae3965d9ddc824bcbe07f63ed2691547e494f9b))
+  *  update uglifyjs-webpack-plugin ([0c18c9b3](https://github.com/tagraha/react-start/commit/0c18c9b3f186286afcf65b929587f09da9507e9b))
+
 #### 2.3.9 (2018-12-18)
 
 ##### Bug Fixes
