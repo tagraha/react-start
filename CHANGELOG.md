@@ -1,3 +1,13 @@
+#### 2.3.11 (2019-01-05)
+
+##### Bug Fixes
+
+* **eslint:**  fix eslint rule ([7d58a4a3](https://github.com/tagraha/react-start/commit/7d58a4a3c76ca5923857eae9c57d5f8bc2e4b42d))
+
+##### Other Changes
+
+* **package:**  udpate uglifyjs-webpack-plugin ([103ca522](https://github.com/tagraha/react-start/commit/103ca522e2856005847d78894b8d134a854367de))
+
 #### 2.3.10 (2018-12-26)
 
 ##### Other Changes
