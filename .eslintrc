@@ -1,6 +1,9 @@
 {
   "parser": "babel-eslint",
   "extends": "airbnb",
+  "plugins": [
+    "react-hooks"
+  ],
   "env": {
     "browser": true,
     "es6": true,
@@ -33,6 +36,7 @@
     "implicit-arrow-linebreak": "off",
     "operator-linebreak": "off",
     "max-len": "off",
-    "no-unused-expressions": "off"
+    "no-unused-expressions": "off",
+    "react-hooks/rules-of-hooks": "error"
   }
 }
