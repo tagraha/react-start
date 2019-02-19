@@ -1,3 +1,14 @@
+#### 2.3.12 (2019-02-19)
+
+##### Other Changes
+
+* **package:**
+  *  update package ([19f5cf41](https://github.com/tagraha/react-start/commit/19f5cf41e4ef5f220e82d31762758dfc13694432))
+  *  update webpack-dev-middleware ([4e2424cc](https://github.com/tagraha/react-start/commit/4e2424cc3c1b7b3950b3114072a1d7bbd2bbd6ac))
+  *  update serialize-javascript ([867538c0](https://github.com/tagraha/react-start/commit/867538c0ed90656654e39cf027410ff27675183e))
+  *  update react-hot-loader ([bf234eea](https://github.com/tagraha/react-start/commit/bf234eea0305b4c9f03f4edfe9c5436656d22612))
+* **hook:**  update package & adding react hook eslint plugin ([2efb5565](https://github.com/tagraha/react-start/commit/2efb55655e35cf3f9f55ae5f2de8a13aec3122c0))
+
 #### 2.3.11 (2019-01-05)
 
 ##### Bug Fixes
