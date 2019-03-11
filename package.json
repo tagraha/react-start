@@ -80,7 +80,7 @@
     "happypack": "5.0.0",
     "helmet": "3.15.0",
     "hpp": "0.2.2",
-    "modernizr": "3.6.0",
+    "modernizr": "3.7.0",
     "node-notifier": "5.3.0",
     "normalize.css": "8.0.1",
     "offline-plugin": "5.0.6",
@@ -101,7 +101,7 @@
     "redux-logger": "3.0.6",
     "redux-thunk": "2.3.0",
     "serialize-javascript": "1.6.1",
-    "source-map-support": "0.5.9",
+    "source-map-support": "0.5.10",
     "styled-components": "4.1.2",
     "uuid": "3.3.2"
   },
