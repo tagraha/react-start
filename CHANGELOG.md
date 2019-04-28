@@ -1,3 +1,18 @@
+#### 2.3.13 (2019-04-28)
+
+##### Other Changes
+
+* **package:**
+  *  update serialize-javascript ([6c39eeb0](https://github.com/tagraha/react-start/commit/6c39eeb0a98868cda994b9b005b23f63e44cc91f))
+  *  update source-map-support ([ac0bf986](https://github.com/tagraha/react-start/commit/ac0bf9869eb7930b31f072520bdddef6f2b43d2d))
+  *  update compression ([e8817b92](https://github.com/tagraha/react-start/commit/e8817b9299d4b7bd4cceb6beaa3abd27b4686c60))
+  *  update webpack-hot-middleware ([6a33be64](https://github.com/tagraha/react-start/commit/6a33be64cf130de42fea4ab12817d759f317af56))
+  *  update uglifyjs-webpack-plugin 2.1.2 ([d32adf35](https://github.com/tagraha/react-start/commit/d32adf35dbd419536c64e301e05b5c7580fbfdc9))
+  *  update react package ([5c9d866d](https://github.com/tagraha/react-start/commit/5c9d866dee8abf49570bd5c4bfc4f196d7bcc62c))
+  *  update helmet & babel-jest ([1ecba5e6](https://github.com/tagraha/react-start/commit/1ecba5e62f311bf2ded776328ca6161a5ac71452))
+  *  update modernizr ^ source-map-support ([f9c7da97](https://github.com/tagraha/react-start/commit/f9c7da97675c7e9e9735e32291ff1859f3b482c3))
+  *  update react & eslint ([b82e8c5f](https://github.com/tagraha/react-start/commit/b82e8c5f915d29ace199d947a87602962549b0b6))
+
 #### 2.3.12 (2019-02-19)
 
 ##### Other Changes
