@@ -101,7 +101,7 @@
     "redux-logger": "3.0.6",
     "redux-thunk": "2.3.0",
     "serialize-javascript": "1.6.1",
-    "source-map-support": "0.5.10",
+    "source-map-support": "0.5.12",
     "styled-components": "4.1.2",
     "uuid": "3.3.2"
   },
