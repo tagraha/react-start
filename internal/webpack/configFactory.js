@@ -494,7 +494,10 @@ export default function webpackConfigFactory(buildOptions) {
                 // When targetting the server we use the "/locals" version of the
                 // css loader, as we don't need any css files for the server.
                 ifNode({
-                  loaders: ['css-loader/locals'],
+                  loader: 'css-loader',
+                  options: {
+                    exportOnlyLocals: true,
+                  },
                 }),
               ),
             ),
