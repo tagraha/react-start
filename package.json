@@ -92,7 +92,7 @@
     "react-async-component": "2.0.0",
     "react-dom": "16.8.6",
     "react-helmet": "5.2.1",
-    "react-hot-loader": "4.6.3",
+    "react-hot-loader": "4.8.5",
     "react-jobs": "1.0.1",
     "react-redux": "7.0.3",
     "react-router-dom": "4.3.1",
