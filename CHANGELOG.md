@@ -1,3 +1,17 @@
+#### 2.3.14 (2019-05-17)
+
+##### Other Changes
+
+* **package:**
+  *  update react-redux ([3884b43f](https://github.com/tagraha/react-start/commit/3884b43fea6476443b0b1402f7b5e2216067f946))
+  *  update dependencies ([d136b8c6](https://github.com/tagraha/react-start/commit/d136b8c658635117e41051ebbb72cc615c6c3fa6))
+  *  update babel-plugin-transform-react-remove-prop-types ([f37a41fc](https://github.com/tagraha/react-start/commit/f37a41fc3c98c6fa2b80fca6f71ea671ccfd648e))
+* **config:**  update css-loader2.1.1 config ([386047dd](https://github.com/tagraha/react-start/commit/386047ddcef21b3e42d8f5e1ccf6e6dc40304e92))
+
+##### Tests
+
+* **snapshot:**  update snapshot ([62980d24](https://github.com/tagraha/react-start/commit/62980d244d30dd6ee1f4a5e36415d32fbd10a928))
+
 #### 2.3.13 (2019-04-28)
 
 ##### Other Changes
