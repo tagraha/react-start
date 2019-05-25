@@ -73,13 +73,13 @@ export default function reactApplicationMiddleware(request, response) {
   const app = (
     <AsyncComponentProvider asyncContext={asyncComponentsContext}>
       <JobProvider jobContext={jobContext}>
-        <StaticRouter location={request.url} context={reactRouterContext}>
-          <Provider store={store}>
+        <Provider store={store}>
+          <StaticRouter location={request.url} context={reactRouterContext}>
             <StyleSheetManager sheet={sheet.instance}>
               <DemoApp />
             </StyleSheetManager>
-          </Provider>
-        </StaticRouter>
+          </StaticRouter>
+        </Provider>
       </JobProvider>
     </AsyncComponentProvider>
   );
