@@ -160,7 +160,7 @@
     "webpack": "4.32.2",
     "webpack-bundle-analyzer": "3.3.2",
     "webpack-dev-middleware": "3.7.0",
-    "webpack-hot-middleware": "2.24.4",
+    "webpack-hot-middleware": "2.25.0",
     "webpack-node-externals": "1.7.2"
   },
   "eslintConfig": {
