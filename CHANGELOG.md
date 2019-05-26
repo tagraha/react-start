@@ -1,3 +1,24 @@
+### 2.4.0 (2019-05-26)
+
+##### Bug Fixes
+
+* **ssr:**  fix broken SSR ([17b61e25](https://github.com/tagraha/react-start/commit/17b61e25307de251e8cab1765c40c74533ff701a))
+
+##### Other Changes
+
+* **package:**
+  *  update uglifyjs-webpack-plugin ([e93e1944](https://github.com/tagraha/react-start/commit/e93e1944c4d1dd8dfb5a4948534003c9df3a28f0))
+  *  update react-hot-loader ([119537f6](https://github.com/tagraha/react-start/commit/119537f6e799d81b31f73e6a5446e5f5187d0e5d))
+  *  update react-helmet ([ab6c1ecf](https://github.com/tagraha/react-start/commit/ab6c1ecfc8ad24992269b8459de0bf9499f3fd8f))
+  *  update node-notifier ([abcd436f](https://github.com/tagraha/react-start/commit/abcd436f7c30fbb23c23727d274f41743cbd1016))
+  *  update dotenv ([caed403c](https://github.com/tagraha/react-start/commit/caed403c0f182ebea8165c7ee3b3164e4b774f62))
+  *  update chalk ([8b96f5af](https://github.com/tagraha/react-start/commit/8b96f5af430f0fd3a9be9113eba81f7dfee0fb5f))
+  *  update modernizer ([b82907f4](https://github.com/tagraha/react-start/commit/b82907f4b2ed61c3198418e8e3192954d632eee7))
+
+##### Tests
+
+* **snapshot:**  update test snapshot ([7b0a4268](https://github.com/tagraha/react-start/commit/7b0a426856a4b078ad7a352d37730474b9916427))
+
 #### 2.3.14 (2019-05-17)
 
 ##### Other Changes
