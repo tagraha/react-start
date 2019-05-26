@@ -65,20 +65,16 @@ PostRoute.propTypes = {
   incrementAction: PropTypes.func.isRequired, // eslint-disable-line react/forbid-prop-types
 };
 
-// export default PostRoute;
 export default compose(
   connect(mapStateToProps, mapActionsToProps),
   withJob({
     work: (
       { match, post, asyncDemo }, // eslint-disable-line
-    ) =>
-      // Execute the redux-thunk powered action that returns a Promise and
-      // fetches the post.
-      asyncDemo(),
-      // Any time the post id changes we need to trigger the work.
-      shouldWorkAgain: (prevProps, nextProps) => {
+    ) => asyncDemo(), // Execute the redux-thunk powered action that returns a Promise and fetches the post.
+    // Any time the post id changes we need to trigger the work.
+    shouldWorkAgain: (prevProps, nextProps) => {
       // eslint-disable-line
-      prevProps.post.id !== nextProps.post.id;
+      return prevProps.post.id !== nextProps.post.id;
     },
   }),
 )(PostRoute);
