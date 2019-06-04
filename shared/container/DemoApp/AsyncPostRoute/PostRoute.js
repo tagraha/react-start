@@ -74,7 +74,7 @@ export default compose(
     // Any time the post id changes we need to trigger the work.
     shouldWorkAgain: (prevProps, nextProps) => {
       // eslint-disable-line
-      return prevProps.post.id !== nextProps.post.id;
+      return prevProps.post.asyncPostExample.id !== nextProps.post.asyncPostExample.id;
     },
   }),
 )(PostRoute);
