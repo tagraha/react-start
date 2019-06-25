@@ -496,7 +496,7 @@ export default function webpackConfigFactory(buildOptions) {
                 ifNode({
                   loader: 'css-loader',
                   options: {
-                    exportOnlyLocals: true,
+                    onlyLocals: true,
                   },
                 }),
               ),
