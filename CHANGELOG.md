@@ -1,3 +1,33 @@
+### 2.5.0 (2019-06-25)
+
+##### Bug Fixes
+
+* **mismatch:**  fix mismatch object comparing ([5959c59f](https://github.com/tagraha/react-start/commit/5959c59fb8b652f72ead8f9e75ea08dd52e01622))
+
+##### Other Changes
+
+* **packagee:**  update webpack ([92136356](https://github.com/tagraha/react-start/commit/9213635647c180377a0bf24a25fd7d2bae1c4b59))
+* **package:**
+  *  update webpack ([3f6c3eaa](https://github.com/tagraha/react-start/commit/3f6c3eaa7d9721fa55beab3e78c02dcd675e0f81))
+  *  update styled-components ([2f6c32cd](https://github.com/tagraha/react-start/commit/2f6c32cde1cdb0918f3d118f3255f5b9c892cc28))
+  *  update styled-components ([3ff01e63](https://github.com/tagraha/react-start/commit/3ff01e630c2b1186e55e8fdc941fb47bf21e42c5))
+  *  update axios ([7310dea7](https://github.com/tagraha/react-start/commit/7310dea744735831336603a278e48ead8c533090))
+  *  update react-hot-loader ([cffe0d1b](https://github.com/tagraha/react-start/commit/cffe0d1b3fa36efb0900c8fcb8ae9aa08f5bcb87))
+  *  update react-hot-loader ([ef47f9dd](https://github.com/tagraha/react-start/commit/ef47f9dda4085363a75375cad6b94e37605ae0b8))
+  *  update yarn lock ([5030707f](https://github.com/tagraha/react-start/commit/5030707fdfee8cb65c5c152d2e4a215b54aaead8))
+  *  update react-hot-loader ([22cd2009](https://github.com/tagraha/react-start/commit/22cd2009ffa6008c83955885ef88d3e46c333efa))
+  *  update express ([627a8a1a](https://github.com/tagraha/react-start/commit/627a8a1a9f467a206698ce63aa42eb48c3a4830a))
+  *  update eslint-config-prettier ([12a51680](https://github.com/tagraha/react-start/commit/12a51680e33052b75ea37c440adf6e6226ad914a))
+  *  update prettier ([798b4e55](https://github.com/tagraha/react-start/commit/798b4e557538a352ce17199522b444b27a387561))
+  *  update webpack-hot-middleware ([d59f2564](https://github.com/tagraha/react-start/commit/d59f25647058b05cb971942bba2cc3c38e700e4c))
+  *  update webpack-dev-middleware ([8b4ef7a5](https://github.com/tagraha/react-start/commit/8b4ef7a5bd1f6d6f0dae45a2679c8a3386cec2aa))
+  *  update webpack ([d6e5b6f8](https://github.com/tagraha/react-start/commit/d6e5b6f8b25047eccbbd83a566aab0088e396586))
+  *  update react-dev-utils ([72618050](https://github.com/tagraha/react-start/commit/72618050358c741ac8c60d6bbc0f5513659a6f79))
+
+##### Refactors
+
+* **package:**  update packages and fix css-loader deprecated options ([7152a725](https://github.com/tagraha/react-start/commit/7152a72544368c7beed9d78298a6899ab7b7b8ae))
+
 ### 2.4.0 (2019-05-26)
 
 ##### Bug Fixes
