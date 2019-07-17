@@ -1,3 +1,13 @@
+#### 2.5.1 (2019-07-17)
+
+##### Other Changes
+
+* **package:**
+  *  update redux ([c229174a](https://github.com/tagraha/react-start/commit/c229174a4dce72e6eca52ff74c8de0cfa6193486))
+  *  update webpack ([bd8faecb](https://github.com/tagraha/react-start/commit/bd8faecbf5c73d15bf13a66668a76259763455a0))
+  *  update react-hot-loader ([7277eeee](https://github.com/tagraha/react-start/commit/7277eeeeea49343fd7cd481c2b56cb5956bf2bf6))
+  *  update eslint-config-airbnb ([54052d8b](https://github.com/tagraha/react-start/commit/54052d8b7c60a1d345981f039d6f6e116510fd5a))
+
 ### 2.5.0 (2019-06-25)
 
 ##### Bug Fixes
