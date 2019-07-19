@@ -1,3 +1,15 @@
+#### 2.5.2 (2019-07-19)
+
+##### Other Changes
+
+* **package:**
+  *  update file-loader & css-loader ([82fee492](https://github.com/tagraha/react-start/commit/82fee49261b6c124ab60afa7c39d5216d96accda))
+  *  update package-lock ([275c780b](https://github.com/tagraha/react-start/commit/275c780b7017f1f12581dfbc7c3d8dd3a53ecc0a))
+  *  update yarn lock ([55f00326](https://github.com/tagraha/react-start/commit/55f00326d9222cd3ecee7e7ea9dbd03a09a6fb6c))
+  *  update styled-components ([a8c79771](https://github.com/tagraha/react-start/commit/a8c7977122a1b9df50b0b91031b550605ee3b90a))
+  *  npm audit fix ([28e338d7](https://github.com/tagraha/react-start/commit/28e338d7b7da8a0bbb7b1ac69cc30998240a7c4f))
+* **CI:**  fix travis CI error ([b8bb8243](https://github.com/tagraha/react-start/commit/b8bb8243b3bb4e41634ef94fe21331465c16311b))
+
 #### 2.5.1 (2019-07-17)
 
 ##### Other Changes
