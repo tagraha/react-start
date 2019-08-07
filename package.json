@@ -1,6 +1,6 @@
 {
   "name": "react-start",
-  "version": "2.5.3",
+  "version": "2.5.4",
   "description": "heavily modified of react universally",
   "main": "build/server/index.js",
   "engines": {
