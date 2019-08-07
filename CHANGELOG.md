@@ -1,3 +1,19 @@
+#### 2.5.4 (2019-08-07)
+
+##### Bug Fixes
+
+* **warning:**  fix eslint warning ([c7e9ddc8](https://github.com/tagraha/react-start/commit/c7e9ddc8a4341e689bdd235979e9daf03587123e))
+
+##### Other Changes
+
+* **package:**
+  *  update helmet ([8de4c74d](https://github.com/tagraha/react-start/commit/8de4c74da006dd8ffddba24a07118fdd57960e9c))
+  *  update react-hot-loader ([b30414c0](https://github.com/tagraha/react-start/commit/b30414c06bfd6aebab94c446ac374563b07bdabf))
+  *  update eslint ([0f8bb64a](https://github.com/tagraha/react-start/commit/0f8bb64a295f94d527ab56009940fdb66b5dd2a1))
+  *  update webpack-bundle-analyzer ([98db21d2](https://github.com/tagraha/react-start/commit/98db21d27d4e0fd782360f179fdadcc0ac4818a0))
+  *  update webpack ([c467f13d](https://github.com/tagraha/react-start/commit/c467f13da038fcbc0f7e62cc5eb4f1b139f77ed9))
+  *  update uglifyjs-webpack-plugin ([2c3d63b2](https://github.com/tagraha/react-start/commit/2c3d63b2c28161d5b82164aed009f12672128f14))
+
 #### 2.5.3 (2019-07-22)
 
 #### 2.5.2 (2019-07-19)
