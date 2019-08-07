@@ -72,9 +72,8 @@ export default compose(
       { match, post, asyncDemo }, // eslint-disable-line
     ) => asyncDemo(), // Execute the redux-thunk powered action that returns a Promise and fetches the post.
     // Any time the post id changes we need to trigger the work.
-    shouldWorkAgain: (prevProps, nextProps) => {
+    shouldWorkAgain: (prevProps, nextProps) =>
       // eslint-disable-line
-      return prevProps.post.asyncPostExample.id !== nextProps.post.asyncPostExample.id;
-    },
+      prevProps.post.asyncPostExample.id !== nextProps.post.asyncPostExample.id,
   }),
 )(PostRoute);

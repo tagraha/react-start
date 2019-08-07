@@ -10,7 +10,6 @@
  */
 
 /* eslint-disable no-console */
-/* eslint-disable import/global-require */
 /* eslint-disable no-underscore-dangle */
 
 // PRIVATES
