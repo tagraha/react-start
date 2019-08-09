@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class Error404 extends Component {
-  componentWillMount() {
+  componentDidMount() {
     const { staticContext } = this.props;
     if (staticContext) {
       staticContext.missed = true;
