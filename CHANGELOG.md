@@ -1,3 +1,16 @@
+#### 2.5.5 (2019-08-09)
+
+##### Other Changes
+
+* **package:**
+  *  remove normalize css ([32e001ed](https://github.com/tagraha/react-start/commit/32e001edb83b471f20383a650b82ca793e9e5a54))
+  *  update react ([07696323](https://github.com/tagraha/react-start/commit/07696323987a4a2d6baeb4fcc196e2398a151308))
+
+##### Refactors
+
+* **deprecated:**  remove componentWillMount deprecated warning ([cfbe9dcb](https://github.com/tagraha/react-start/commit/cfbe9dcba2a7010914cb91faee6730b86aee93be))
+* **normalize:**  unmount normalize css import ([f87f72f1](https://github.com/tagraha/react-start/commit/f87f72f1fd8c5fcb280dce2eb6164215b4461967))
+
 #### 2.5.4 (2019-08-07)
 
 ##### Bug Fixes
