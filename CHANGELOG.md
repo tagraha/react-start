@@ -1,3 +1,12 @@
+#### 2.5.6 (2019-08-13)
+
+##### Other Changes
+
+* **package:**
+  *  update source-map-support ([b8c255d5](https://github.com/tagraha/react-start/commit/b8c255d5d86a37dc52e00ff021cab4e09498db3d))
+  *  update react-hot-loader ([f76e243b](https://github.com/tagraha/react-start/commit/f76e243b3554f2b8da4fd1dc8c3194906e87a645))
+  *  update react-test-renderer ([3c1c2b67](https://github.com/tagraha/react-start/commit/3c1c2b6787dda703532addfa22b89379dd9f4b07))
+
 #### 2.5.5 (2019-08-09)
 
 ##### Other Changes
