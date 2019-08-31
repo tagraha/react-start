@@ -43,7 +43,7 @@ exports[`<AboutRoute /> renders 1`] = `
      
     page.
   </p>
-  <p>
+  <styled.p>
     honorable mention
      
     <a
@@ -53,6 +53,6 @@ exports[`<AboutRoute /> renders 1`] = `
     >
       ctrlplusb
     </a>
-  </p>
+  </styled.p>
 </div>
 `;
