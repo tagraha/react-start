@@ -1,3 +1,17 @@
+#### 2.5.7 (2019-08-31)
+
+##### Bug Fixes
+
+* **style:**  fix broken styled-components on server side rendering ([20fb7c03](https://github.com/tagraha/react-start/commit/20fb7c03abe035e88767448d9d2ae2f9e7459634))
+
+##### Other Changes
+
+* **package:**  update react-dev-utils ([b66eadba](https://github.com/tagraha/react-start/commit/b66eadba25a9c2fd4c21bfb6fde6b66640cbba92))
+
+##### Tests
+
+* **snapshot:**  update snapshot ([2d9e97a3](https://github.com/tagraha/react-start/commit/2d9e97a32d9cc07c7f2d9c660419cf6f769d12c0))
+
 #### 2.5.6 (2019-08-13)
 
 ##### Other Changes
