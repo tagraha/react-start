@@ -1,5 +1,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import styled from 'styled-components';
+
+const TestStyle = styled.p`
+  color: red;
+`;
 
 function AboutRoute() {
   return (
@@ -28,7 +33,7 @@ function AboutRoute() {
         </a>{' '}
         page.
       </p>
-      <p>
+      <TestStyle>
         honorable mention{' '}
         <a
           target="_blank"
@@ -37,7 +42,7 @@ function AboutRoute() {
         >
           ctrlplusb
         </a>
-      </p>
+      </TestStyle>
     </div>
   );
 }

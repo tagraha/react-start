@@ -102,6 +102,8 @@ export default function reactApplicationMiddleware(request, response) {
       />,
     );
 
+    const stream = sheet.interleaveWithNodeStream(html);
+
     switch (reactRouterContext.status) {
       case 301:
       case 302:
@@ -117,7 +119,7 @@ export default function reactApplicationMiddleware(request, response) {
         response.status(reactRouterContext.status);
         response.type('html');
         response.write('<!doctype html>');
-        html.pipe(response);
+        stream.pipe(response);
         break;
       default:
         // Otherwise everything is all good and we send a 200 OK status.
@@ -125,7 +127,7 @@ export default function reactApplicationMiddleware(request, response) {
         response.type('html');
         response.setHeader('Cache-Control', 'no-cache');
         response.write('<!doctype html>');
-        html.pipe(response);
+        stream.pipe(response);
     }
   });
 }
