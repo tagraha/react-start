@@ -156,7 +156,7 @@
     "semver": "5.6.0",
     "style-loader": "0.23.1",
     "uglifyjs-webpack-plugin": "2.2.0",
-    "webpack": "4.39.1",
+    "webpack": "4.39.3",
     "webpack-bundle-analyzer": "3.4.1",
     "webpack-dev-middleware": "3.7.0",
     "webpack-hot-middleware": "2.25.0",
