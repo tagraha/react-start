@@ -1,3 +1,21 @@
+#### 2.5.8 (2019-09-02)
+
+##### Other Changes
+
+* **package:**
+  *  update eslint ([66dd75db](https://github.com/tagraha/react-start/commit/66dd75dbdbe9a5aeac8d20250b4fc8a3ab7acfe2))
+  *  update webpack ([adc9d96d](https://github.com/tagraha/react-start/commit/adc9d96d361dcaa145bbc281f55b127fb507a7df))
+  *  update react-dev-utils ([583eaa60](https://github.com/tagraha/react-start/commit/583eaa6065fa6bd39d388abdfeee02991e62aba8))
+  *  update package dependencies ([afac2f61](https://github.com/tagraha/react-start/commit/afac2f61c95ded70e3bd2de457046306c00a96d7))
+
+##### Refactors
+
+* **style:**  remove unnecessary styled components ([3603ed57](https://github.com/tagraha/react-start/commit/3603ed57aaa14599991b80b06113d5a1cfa80f9f))
+
+##### Tests
+
+* **snapshot:**  update about page snapshot ([28aeb6c9](https://github.com/tagraha/react-start/commit/28aeb6c9732f1415609be10a8346a1aca3dda7bd))
+
 #### 2.5.7 (2019-08-31)
 
 ##### Bug Fixes
