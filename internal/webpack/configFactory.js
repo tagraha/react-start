@@ -1,5 +1,6 @@
 import appRootDir from 'app-root-dir';
 import AssetsPlugin from 'assets-webpack-plugin';
+import LodashModuleReplacementPlugin from 'lodash-webpack-plugin';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import UglifyJsPlugin from 'uglifyjs-webpack-plugin';
 import nodeExternals from 'webpack-node-externals';
@@ -254,6 +255,16 @@ export default function webpackConfigFactory(buildOptions) {
             banner: 'require("source-map-support").install();',
             raw: true,
             entryOnly: false,
+          }),
+      ),
+
+      ifProd(
+        () =>
+          // brings us a really small bundle size, so it might be worth it for you.
+          // Of course, build time growth should also be considered.
+          new LodashModuleReplacementPlugin({
+            'collections': true,
+            'paths': true
           }),
       ),
 
