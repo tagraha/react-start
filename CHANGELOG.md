@@ -1,3 +1,18 @@
+### 2.6.0 (2019-09-06)
+
+##### Build System / Dependencies
+
+* **lodash:**  add lodassh import optimize ([b02333f9](https://github.com/tagraha/react-start/commit/b02333f9a015be5735ba4bdb1084caf51e431322))
+
+##### Other Changes
+
+* **package:**
+  *  update uuid ([e7579493](https://github.com/tagraha/react-start/commit/e75794937d97fb4105d6ff96261ec343bce22adb))
+  *  update serialize-javascript ([8c0345b6](https://github.com/tagraha/react-start/commit/8c0345b6ec964007faa331f7318a6a3cac66d294))
+  *  update eslint-plugin-react ([8c12d509](https://github.com/tagraha/react-start/commit/8c12d509021da5a208ff587964ff049f8736df68))
+  *  update webpack-dev-middleware ([0c5af31f](https://github.com/tagraha/react-start/commit/0c5af31fa82d833b0db49b73ba285b707bd6d91d))
+  *  update helmet ([d2a227d3](https://github.com/tagraha/react-start/commit/d2a227d37458960734539d3ae053e8ed79c45b60))
+
 #### 2.5.8 (2019-09-02)
 
 ##### Other Changes
