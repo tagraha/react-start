@@ -1,7 +1,11 @@
 import appRootDir from 'app-root-dir';
 import AssetsPlugin from 'assets-webpack-plugin';
 import LodashModuleReplacementPlugin from 'lodash-webpack-plugin';
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
+// FIXME: migrate to mini-css-extract-plugin
+// import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import TerserJSPlugin from 'terser-webpack-plugin';
+import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import UglifyJsPlugin from 'uglifyjs-webpack-plugin';
 import nodeExternals from 'webpack-node-externals';
 import path from 'path';
@@ -203,6 +207,12 @@ export default function webpackConfigFactory(buildOptions) {
           cache: true,
           sourceMap: config('includeSourceMapsForOptimisedClientBundle'),
         }),
+
+        // to minify your JavaScript.
+        new TerserJSPlugin({}),
+
+        // To minify the css output
+        new OptimizeCSSAssetsPlugin({}),
       ]),
     },
 
@@ -338,11 +348,23 @@ export default function webpackConfigFactory(buildOptions) {
 
       // For the production build of the client we need to extract the CSS into
       // CSS files.
+      // it's deprecated since webpack v4
+      // FIXME: Migrate to mini-css-extract-plugin
+      // ifProdClient(
+      //   () =>
+      //     new ExtractTextPlugin({
+      //       filename: '[name]-[hash].css',
+      //       allChunks: true,
+      //     }),
+      // ),
+
       ifProdClient(
         () =>
-          new ExtractTextPlugin({
-            filename: '[name]-[hash].css',
-            allChunks: true,
+          new MiniCssExtractPlugin({
+            // Options similar to the same options in webpackOptions.output
+            // both options are optional
+            filename: '[name].[hash].css',
+            chunkFilename: '[id].[hash].css',
           }),
       ),
 
@@ -496,12 +518,13 @@ export default function webpackConfigFactory(buildOptions) {
                 // an ExtractTextPlugin instance.
                 // Note: The ExtractTextPlugin needs to be registered within the
                 // plugins section too.
-                ifProdClient(() => ({
-                  loader: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: ['css-loader'],
-                  }),
-                })),
+                // FIXME: migrate to mini-css-extract-plugin
+                // ifProdClient(() => ({
+                //   loader: ExtractTextPlugin.extract({
+                //     fallback: 'style-loader',
+                //     use: ['css-loader'],
+                //   }),
+                // })),
                 // When targetting the server we use the "/locals" version of the
                 // css loader, as we don't need any css files for the server.
                 ifNode({
@@ -510,6 +533,13 @@ export default function webpackConfigFactory(buildOptions) {
                     onlyLocals: true,
                   },
                 }),
+                ifProdClient(() => ({
+                  loaders: [MiniCssExtractPlugin.loader, 'css-loader'],
+                  // options: {
+                  //   // if hmr does not work, this is a forceful method.
+                  //   reloadAll: true,
+                  // }
+                }))
               ),
             ),
 
