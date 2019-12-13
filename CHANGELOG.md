@@ -1,3 +1,29 @@
+### 2.8.0 (2019-12-13)
+
+##### New Features
+
+* **babel:**  upgrade to babel 7 ([dc4e3b7c](https://github.com/tagraha/react-start/commit/dc4e3b7c7742a385b40cebd2939f611ae38ed588))
+
+##### Other Changes
+
+* **package:**
+  *  update react-hot-loader ([3f6ce347](https://github.com/tagraha/react-start/commit/3f6ce347261c88ccf63f203503e84c769802fc2d))
+  *  update serialize-javascript ([4679f32b](https://github.com/tagraha/react-start/commit/4679f32b4b029f3cf0c54781d4152bb7b9a8cc9c))
+  *  update style-loader ([053eeb98](https://github.com/tagraha/react-start/commit/053eeb9811292039145051a80dd9b078b1887b6c))
+  *  update terser-webpack-plugin ([f6c411d3](https://github.com/tagraha/react-start/commit/f6c411d33a2bd9be4c5eb90f13bb9b0100247fe5))
+  *  update webpack-dev-middleware ([e1d1d537](https://github.com/tagraha/react-start/commit/e1d1d5372a3a916965c8566ac113662227ab947a))
+  *  update webpack bundle analyzer ([267d29b0](https://github.com/tagraha/react-start/commit/267d29b04d91f40e893515316ee3ec8976b7c4b9))
+  *  update helmet ([334fc212](https://github.com/tagraha/react-start/commit/334fc21214ec55f7f1abc3698dc796bc052c4462))
+  *  update file-loader ([6d4c184d](https://github.com/tagraha/react-start/commit/6d4c184d013c5615125ce63ef9542a34b9854ab2))
+  *  update react-dev-utils ([38621e71](https://github.com/tagraha/react-start/commit/38621e712a4e4bee844734bbd307eca0f8768ce0))
+  *  update style-loader ([6ee9a5af](https://github.com/tagraha/react-start/commit/6ee9a5afcf870b1d4eb50da36c1989184bf97041))
+  *  update react ([c2cf1a1a](https://github.com/tagraha/react-start/commit/c2cf1a1a6179ae79c9021b49c8d5f8e21f0a3298))
+  *  update eslint-plugin-react ([d85b0d4f](https://github.com/tagraha/react-start/commit/d85b0d4f6f35bbf6d4e4c0ae988c11f8a8910e8e))
+  *  update terser-webpack-plugin ([d59d5e0b](https://github.com/tagraha/react-start/commit/d59d5e0b1b418d2915ee2bc4cbaa80d1c314f6d5))
+  *  update webpack ([5ee5b479](https://github.com/tagraha/react-start/commit/5ee5b479de682db9d1125a46fb4895656f99acf3))
+  *  update react, react-dom & react-test-renderer ([23d70049](https://github.com/tagraha/react-start/commit/23d700492ae44c031b56f977867163001f19b18f))
+* **plugin:**  migrate to mini-css-extract-plugin ([4b4b0afb](https://github.com/tagraha/react-start/commit/4b4b0afb1699fc4077a8e48bef9083d6df92f5cc))
+
 ### 2.7.0 (2019-09-17)
 
 ### 2.6.0 (2019-09-06)
