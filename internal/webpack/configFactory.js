@@ -404,20 +404,20 @@ export default function webpackConfigFactory(buildOptions) {
 
                 presets: [
                   // JSX
-                  'react',
+                  '@babel/react',
                   // Stage 3 javascript syntax.
                   // "Candidate: complete spec and initial browser implementations."
                   // Add anything lower than stage 3 at your own risk. :)
-                  'stage-3',
+                  // '@babel/preset-stage-3',
                   // For our client bundles we transpile all the latest ratified
                   // ES201X code into ES5, safe for browsers.  We exclude module
                   // transilation as webpack takes care of this for us, doing
                   // tree shaking in the process.
-                  ifClient(['env', { es2015: { modules: false } }]),
+                  ifClient(['@babel/env', { modules: false }]),
                   // For a node bundle we use the specific target against
                   // babel-preset-env so that only the unsupported features of
                   // our target node version gets transpiled.
-                  ifNode(['env', { targets: { node: true } }]),
+                  ifNode(['@babel/env', { targets: { node: true } }]),
                 ].filter(x => x != null),
 
                 plugins: [
@@ -425,26 +425,26 @@ export default function webpackConfigFactory(buildOptions) {
                   ifDevClient('react-hot-loader/babel'),
                   // This decorates our components with  __self prop to JSX elements,
                   // which React will use to generate some runtime warnings.
-                  ifDev('transform-react-jsx-self'),
+                  ifDev('@babel/transform-react-jsx-self'),
                   // Adding this will give us the path to our components in the
                   // react dev tools.
-                  ifDev('transform-react-jsx-source'),
+                  ifDev('@babel/transform-react-jsx-source'),
                   // Replaces the React.createElement function with one that is
                   // more optimized for production.
                   // NOTE: Symbol needs to be polyfilled. Ensure this feature
                   // is enabled in the polyfill.io configuration.
-                  ifProd('transform-react-inline-elements'),
+                  ifProd('@babel/transform-react-inline-elements'),
                   // Hoists element creation to the top level for subtrees that
                   // are fully static, which reduces call to React.createElement
                   // and the resulting allocations. More importantly, it tells
                   // React that the subtree hasn’t changed so React can completely
                   // skip it when reconciling.
-                  ifProd('transform-react-constant-elements'),
+                  ifProd('@babel/transform-react-constant-elements'),
                   // Remove React propTypes from the production build, as they are only used in development.
                   // You can save bandwidth by removing them.
                   ifProd('transform-react-remove-prop-types'),
                   // Add syntax dynamic import for direct webpack `import()` support
-                  'syntax-dynamic-import',
+                  '@babel/syntax-dynamic-import',
                 ].filter(x => x != null),
               },
               buildOptions,
