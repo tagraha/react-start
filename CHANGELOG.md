@@ -1,3 +1,19 @@
+#### 2.8.1 (2019-12-31)
+
+##### Other Changes
+
+* **package:**
+  *  update redux ([e91fc594](https://github.com/tagraha/react-start/commit/e91fc59409973665ac1de823ed35c0395a4a9b16))
+  *  update react-redux ([a8ed3537](https://github.com/tagraha/react-start/commit/a8ed353734bc19fca76e6fb77334f824fa912857))
+  *  update source-map-support ([6a284757](https://github.com/tagraha/react-start/commit/6a2847575323be0c7501287463d81d3c8ffe413b))
+  *  update css-loader ([09345433](https://github.com/tagraha/react-start/commit/093454332c09b96ea6a9335a70d8a7dac0c9eb9f))
+  *  update mini-css-extract-plugin ([19841e9c](https://github.com/tagraha/react-start/commit/19841e9c08e64b9a8e3bb105be44c0c0931e1fda))
+  *  update react-dev-utils ([8ce5d0b5](https://github.com/tagraha/react-start/commit/8ce5d0b5edbc87fa47c080f51bd7584176b8b899))
+  *  update webpack ([e43342da](https://github.com/tagraha/react-start/commit/e43342da05c4e09b1fea2e033008a2dc08f7d295))
+  *  update webpack ([58ab4e2b](https://github.com/tagraha/react-start/commit/58ab4e2b89a54ca76f5d25d3c64e05e5b3180ce6))
+  *  update eslint ([86491b9d](https://github.com/tagraha/react-start/commit/86491b9d55a31593fbb25845c86ebfd2472e30c8))
+  *  update jest ([cad4500e](https://github.com/tagraha/react-start/commit/cad4500e8f029cf8461c2ae3430f8f72fca19a55))
+
 ### 2.8.0 (2019-12-13)
 
 ##### New Features
