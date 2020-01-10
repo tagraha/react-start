@@ -1,3 +1,13 @@
+#### 2.8.2 (2020-01-10)
+
+##### Other Changes
+
+* **package:**
+  *  update husky ([d558692f](https://github.com/tagraha/react-start/commit/d558692f15cfef09a51924005a424566af5915be))
+  *  update css-loader ([505d3d88](https://github.com/tagraha/react-start/commit/505d3d881733c1cb847c8ab97b1a170e3c562491))
+  *  update style-loader ([af961625](https://github.com/tagraha/react-start/commit/af961625280437f47f9d856ce95adae10cd8ba7f))
+  *  update terser-webpack-plugin ([212dcb3c](https://github.com/tagraha/react-start/commit/212dcb3c0cbfa30af0df010bdf7851542cc680cc))
+
 #### 2.8.1 (2019-12-31)
 
 ##### Other Changes
