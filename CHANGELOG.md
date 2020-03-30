@@ -1,3 +1,29 @@
+### 2.9.0 (2020-03-30)
+
+##### Bug Fixes
+
+* **package:**  fix vulnerable warning from package ([31bad109](https://github.com/tagraha/react-start/commit/31bad109947075b0b8b652bd2bce4ff85590de2f))
+
+##### Other Changes
+
+* **package:**
+  *  update webpack bundle analyzer ([e85c063d](https://github.com/tagraha/react-start/commit/e85c063d42da9219420a25d804e891afeeea4b22))
+  *  update react-dev-utils ([3b9a6e94](https://github.com/tagraha/react-start/commit/3b9a6e9443cb17f922ac718ef85effdd18321f00))
+  *  update style-loader ([c62b8e93](https://github.com/tagraha/react-start/commit/c62b8e936b75d2ef3dde547dbcf74645c60d32cf))
+  *  update eslint plugin ([f91d2ede](https://github.com/tagraha/react-start/commit/f91d2edea337c99b41839396e6216f707fd2ccde))
+  *  update html webpack plugin ([3d8ff729](https://github.com/tagraha/react-start/commit/3d8ff729fbb43979dcea396f0682d3af177f4224))
+  *  update prettier ([3e3f49d0](https://github.com/tagraha/react-start/commit/3e3f49d03535baf1952b541792510e885e78e425))
+  *  update webpack ([e2b900cb](https://github.com/tagraha/react-start/commit/e2b900cb1d6a2b045b924dc036f560bf0a940f42))
+  *  update helmet ([c05cec2b](https://github.com/tagraha/react-start/commit/c05cec2b2d75bac01a76045d0182bbae37f55eab))
+  *  update react ([d61c32ab](https://github.com/tagraha/react-start/commit/d61c32ab68f661db0e7e29bdaf926fa32390fc59))
+  *  update terser-webpack-plugin ([5495618a](https://github.com/tagraha/react-start/commit/5495618aee2177c358f4ed9667fe3090294b573f))
+  *  update react & webpack ([a5ed90ab](https://github.com/tagraha/react-start/commit/a5ed90abaefc40f6cd82a2e616939c3bc04fc9bd))
+  *  update axios ([a2d201ba](https://github.com/tagraha/react-start/commit/a2d201ba3335c00a975440de89f0557511c5f264))
+
+##### Refactors
+
+* **hook:**  update class component to hook ([5e0b0ed9](https://github.com/tagraha/react-start/commit/5e0b0ed9615685ddc46db3ea0702fbe6f2de655f))
+
 #### 2.8.2 (2020-01-10)
 
 ##### Other Changes
