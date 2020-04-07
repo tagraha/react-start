@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 const CounterRoute = () => {
-  const [counter, setCounter] = useState(10);
+  const [counter, setCounter] = useState(0);
 
   const incrementCounter = () => {
     setCounter(counter + 1);
