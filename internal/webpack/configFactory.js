@@ -421,6 +421,7 @@ export default function webpackConfigFactory(buildOptions) {
                 ].filter(x => x != null),
 
                 plugins: [
+                  '@babel/plugin-proposal-class-properties',
                   // Required to support react hot loader.
                   ifDevClient('react-hot-loader/babel'),
                   // This decorates our components with  __self prop to JSX elements,
