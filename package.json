@@ -142,7 +142,7 @@
     "eslint-plugin-react-hooks": "1.6.1",
     "file-loader": "6.0.0",
     "glob": "7.1.4",
-    "html-webpack-plugin": "4.0.3",
+    "html-webpack-plugin": "4.0.4",
     "husky": "4.0.5",
     "istanbul-api": "2.0.6",
     "istanbul-reports": "3.0.1",
