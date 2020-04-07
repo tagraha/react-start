@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
@@ -10,46 +10,39 @@ import { loadPost } from './../../../redux/modules/post';
 // internal Components
 import Counter from './../../../components/Demo/Counter';
 
-class PostRoute extends Component {
-  constructor(props) {
-    super(props); // eslint-disable-line
-    this.increment = this.increment.bind(this);
-  }
+const PostRoute = (props) => {
+  const { counter, incrementAction, post } = props;
 
-  increment() {
-    const { incrementAction } = this.props;
+  const increment = () => {
     incrementAction();
-  }
+  };
 
-  render() {
-    const { post, counter } = this.props;
-    return (
-      <div>
-        <Helmet>
-          <title>Async Post Example</title>
-        </Helmet>
+  return (
+    <div>
+      <Helmet>
+        <title>Async Post Example</title>
+      </Helmet>
 
-        <h3>Redux</h3>
-        <h4>
-          async example{' '}
-          <small>
-            (fetch from: https://jsonplaceholder.typicode.com/posts/1)
-          </small>
-        </h4>
-        <p>{post.asyncPostExample.body}</p>
+      <h3>Redux</h3>
+      <h4>
+        async example{' '}
+        <small>
+          (fetch from: https://jsonplaceholder.typicode.com/posts/1)
+        </small>
+      </h4>
+      <p>{post.asyncPostExample.body}</p>
 
-        <p>
-          Redux counter value: <Counter count={counter.counterValue} />
-        </p>
-        <button type="button" onClick={this.increment}>
-          Increment
-        </button>
-      </div>
-    );
-  }
-}
+      <p>
+        Redux counter value: <Counter count={counter.counterValue} />
+      </p>
+      <button type="button" onClick={increment}>
+        Increment
+      </button>
+    </div>
+  );
+};
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   counter: state.counter,
   post: state.post,
 });
