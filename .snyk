@@ -1,0 +1,26 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - lodash:
+        patched: '2020-05-01T04:08:53.307Z'
+    - hpp > lodash:
+        patched: '2020-05-01T04:08:53.307Z'
+    - lodash-webpack-plugin > lodash:
+        patched: '2020-05-01T04:08:53.307Z'
+    - modernizr > lodash:
+        patched: '2020-05-01T04:08:53.307Z'
+    - styled-components > @babel/traverse > lodash:
+        patched: '2020-05-01T04:08:53.307Z'
+    - styled-components > babel-plugin-styled-components > lodash:
+        patched: '2020-05-01T04:08:53.307Z'
+    - styled-components > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-05-01T04:08:53.307Z'
+    - styled-components > babel-plugin-styled-components > @babel/helper-annotate-as-pure > @babel/types > lodash:
+        patched: '2020-05-01T04:08:53.307Z'
+    - styled-components > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-05-01T04:08:53.307Z'
+    - styled-components > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2020-05-01T04:08:53.307Z'
