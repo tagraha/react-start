@@ -80,7 +80,7 @@
     "happypack": "5.0.1",
     "helmet": "3.22.0",
     "hpp": "0.2.2",
-    "lodash": "4.17.15",
+    "lodash": "4.17.17",
     "lodash-webpack-plugin": "0.11.5",
     "modernizr": "3.7.1",
     "node-notifier": "5.4.0",
