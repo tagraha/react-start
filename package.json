@@ -18,7 +18,7 @@
     "preinstall": "node internal/scripts/preinstall",
     "prepush": "jest",
     "start": "cross-env NODE_ENV=production node build/server",
-    "test": "jest",
+    "test": "jest --coverage",
     "test:coverage": "jest --coverage",
     "release:major": "changelog -M -u https://github.com/tagraha/react-start && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major && git push origin --tags",
     "release:minor": "changelog -m -u https://github.com/tagraha/react-start && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor && git push origin --tags",
