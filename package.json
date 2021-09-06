@@ -71,7 +71,7 @@
   "homepage": "https://github.com/tagraha/react-start#readme",
   "dependencies": {
     "app-root-dir": "1.0.2",
-    "axios": "0.19.1",
+    "axios": "0.21.3",
     "chalk": "2.4.2",
     "compression": "1.7.4",
     "cross-env": "5.2.1",
