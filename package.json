@@ -82,7 +82,7 @@
     "hpp": "0.2.2",
     "lodash": "4.17.20",
     "lodash-webpack-plugin": "0.11.5",
-    "modernizr": "3.7.1",
+    "modernizr": "3.13.0",
     "node-notifier": "5.4.0",
     "offline-plugin": "5.0.7",
     "pretty-error": "2.1.1",
