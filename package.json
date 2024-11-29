@@ -24,7 +24,9 @@
     "release:minor": "changelog -m -u https://github.com/tagraha/react-start && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor && git push origin --tags",
     "release:patch": "changelog -p -u https://github.com/tagraha/react-start && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin --tags",
     "contributors:add": "all-contributors add",
-    "contributors:generate": "all-contributors generate"
+    "contributors:generate": "all-contributors generate",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "husky": {
     "hooks": {
@@ -102,7 +104,8 @@
     "redux-logger": "3.0.6",
     "redux-thunk": "2.3.0",
     "source-map-support": "0.5.16",
-    "styled-components": "4.3.2"
+    "styled-components": "4.3.2",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
@@ -201,5 +204,6 @@
     "trailingComma": "all",
     "arrowParens": "always",
     "object-curly-newline": false
-  }
+  },
+  "snyk": true
 }
